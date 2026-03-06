@@ -2204,3 +2204,229 @@ body {
         font-size: 13px;
     }
 }
+
+/* =============================================
+   Team Section
+   ============================================= */
+.team-section {
+    background-color: #f8f9fa;
+}
+
+.team-carousel-wrapper {
+    overflow: hidden;
+}
+
+/* Desktop: 3-column grid */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* ---- Team Card ---- */
+.team-card {
+    background: white;
+    border-radius: 18px;
+    padding: 40px 28px 36px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    overflow: hidden;
+}
+
+/* Glowing red shimmer from bottom on hover */
+.team-card::before {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 100px;
+    /* background: radial-gradient(ellipse, rgba(227, 0, 11, 0.25) 0%, transparent 70%); */
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+/* Red accent top bar line */
+.team-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-red), var(--dark-navy));
+    transition: width 0.5s ease;
+    border-radius: 0 4px 0 0;
+}
+
+.team-card:hover {
+    /* transform: translateY(-10px) scale(1.02); */
+    /* box-shadow: 0 24px 60px rgba(227, 0, 11, 0.15), 0 8px 24px rgba(0, 0, 0, 0.1); */
+}
+
+.team-card:hover::before {
+    opacity: 1;
+    bottom: -20px;
+}
+
+.team-card:hover::after {
+    width: 100%;
+}
+
+/* ---- Social Icons Row ---- */
+.team-social {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 22px;
+    transform: translateY(10px);
+    opacity: 0.85;
+    transition: all 0.35s ease;
+}
+
+.team-card:hover .team-social {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.team-social a {
+    width: 36px;
+    height: 36px;
+    background: var(--dark-navy);
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.team-social a:hover {
+    background: var(--primary-red);
+    transform: translateY(-3px);
+}
+
+/* ---- Animated Circular Image ---- */
+.team-img-wrap {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 28px;
+    position: relative;
+    padding: 5px;
+    border: 3px dashed var(--primary-red);
+    transition: border-color 0.3s ease, transform 0.4s ease;
+}
+
+.team-card:hover .team-img-wrap {
+    border-color: var(--dark-navy);
+    transform: scale(1.05);
+}
+
+/* @keyframes spinBorder {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
+.team-img-wrap::before {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    border-radius: 50%;
+    background: white;
+    z-index: 0;
+}
+
+.team-img-wrap img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+/* ---- Name & Role ---- */
+.team-info {
+    border-left: 4px solid var(--primary-red);
+    padding-left: 14px;
+    text-align: left;
+    margin-top: 4px;
+}
+
+.team-info h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark-navy);
+    margin-bottom: 4px;
+}
+
+.team-info p {
+    font-size: 14px;
+    color: var(--text-gray);
+    margin: 0;
+}
+
+/* ---- Dots (hidden on desktop) ---- */
+.team-dots {
+    display: none;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 28px;
+}
+
+.team-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.team-dot.active {
+    background: var(--primary-red);
+    transform: scale(1.3);
+}
+
+/* =============================================
+   Team — Responsive (Mobile Carousel)
+   ============================================= */
+@media (max-width: 991px) {
+    .team-dots {
+        display: flex;
+    }
+
+    .team-carousel-wrapper {
+        overflow: hidden;
+    }
+
+    /* JS controls card width and padding for the peek effect */
+    .team-grid {
+        display: flex;
+        transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Cards: flex-col centered; actual width set via JS */
+    .team-card {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-info {
+        width: 100%;
+        max-width: 280px;
+    }
+}

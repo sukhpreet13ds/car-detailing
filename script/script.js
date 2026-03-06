@@ -208,4 +208,90 @@ function buildProcessPath() {
 window.addEventListener('load', buildProcessPath);
 window.addEventListener('resize', buildProcessPath);
 
+// =============================================
+// Team Carousel — Peek Style
+// Active card perfectly centred, neighbours peek from sides
+// =============================================
+(function () {
+    const wrapper = document.querySelector('.team-carousel-wrapper');
+    const grid = document.getElementById('teamGrid');
+    const dots = document.querySelectorAll('.team-dot');
+    const cards = grid ? Array.from(grid.querySelectorAll('.team-card')) : [];
+    const total = cards.length;
 
+    if (!grid || total === 0) return;
+
+    const GAP = 20;          // gap between cards in px
+    const CARD_RATIO = 0.78; // card width as fraction of wrapper width
+
+    let current = 0;
+    let timer;
+
+    function isMobile() { return window.innerWidth <= 991; }
+
+    // Set card widths & grid padding so active card is always centred
+    function setupPeek() {
+        const wW = wrapper.offsetWidth;
+        const cW = Math.round(wW * CARD_RATIO);
+        const pad = Math.round((wW - cW) / 2); // padding centres first card
+
+        grid.style.paddingLeft = pad + 'px';
+        grid.style.paddingRight = pad + 'px';
+        grid.style.gap = GAP + 'px';
+
+        cards.forEach(c => {
+            c.style.width = cW + 'px';
+            c.style.minWidth = cW + 'px';
+            c.style.flexShrink = '0';
+        });
+    }
+
+    // Slide to card [index], centred
+    function goTo(index) {
+        current = (index + total) % total;
+
+        if (isMobile()) {
+            const cW = cards[0].offsetWidth;
+            const translate = current * (cW + GAP);
+            grid.style.transform = `translateX(-${translate}px)`;
+        }
+
+        dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    }
+
+    function next() { goTo(current + 1); }
+
+    function startAuto() {
+        clearInterval(timer);
+        timer = setInterval(next, 3000);
+    }
+
+    function resetLayout() {
+        if (isMobile()) {
+            setupPeek();
+            goTo(current);
+            startAuto();
+        } else {
+            // Desktop: undo all inline styles
+            grid.style.transform = '';
+            grid.style.paddingLeft = '';
+            grid.style.paddingRight = '';
+            grid.style.gap = '';
+            cards.forEach(c => { c.style.width = ''; c.style.minWidth = ''; });
+            clearInterval(timer);
+        }
+    }
+
+    // Dot clicks
+    dots.forEach(dot => {
+        dot.addEventListener('click', function () {
+            goTo(parseInt(this.dataset.index));
+            startAuto();
+        });
+    });
+
+    // Boot
+    window.addEventListener('load', resetLayout);
+    window.addEventListener('resize', resetLayout);
+    resetLayout();
+})();
