@@ -103,6 +103,56 @@ document.addEventListener("DOMContentLoaded", function () {
     createCounter(".satisfied-customers-card h3", 1, 24, "K+");
     createCounter(".experience-box h3", 1, 20, "+", 100);
 
+    // Progress Bar Loop — ticks 1 integer unit every N ms, same speed up and down
+    function createProgressLoop(barSelector, textSelector, target, tickMs, holdMs) {
+        const bar = document.querySelector(barSelector);
+        const label = document.querySelector(textSelector);
+        if (!bar || !label) return;
+
+        let current = 0;
+        let direction = 1;   // 1 = going up, -1 = coming down
+        let holding = false;
+
+        // Initialise at exactly 0
+        bar.style.width = '0%';
+        label.textContent = '0%';
+
+        setInterval(function () {
+            if (holding) return;
+
+            current += direction;
+
+            // Clamp to valid range
+            if (current > target) current = target;
+            if (current < 0) current = 0;
+
+            bar.style.width = current + '%';
+            label.textContent = current + '%';
+
+            if (current >= target && direction === 1) {
+                // Reached top — pause then reverse
+                holding = true;
+                setTimeout(function () {
+                    direction = -1;
+                    holding = false;
+                }, holdMs);
+
+            } else if (current <= 0 && direction === -1) {
+                // Reached bottom — pause briefly then go up again
+                holding = true;
+                setTimeout(function () {
+                    direction = 1;
+                    holding = false;
+                }, Math.round(holdMs * 0.4));
+            }
+        }, tickMs);
+    }
+
+    // 90%: ticks every 45ms → 90×45 = 4.05s rise/fall, hold 1.5s
+    // 95%: ticks every 55ms → 95×55 = 5.22s rise/fall, hold 1.8s  (different cycle)
+    createProgressLoop('.anim-bar-90', '.anim-bar-90 .progress-percent', 90, 45, 1500);
+    createProgressLoop('.anim-bar-95', '.anim-bar-95 .progress-percent', 95, 55, 1800);
+
     // Scroll Reveal Intersection Observer
     const revealElements = document.querySelectorAll('.reveal');
     const revealObserver = new IntersectionObserver((entries) => {
@@ -118,4 +168,44 @@ document.addEventListener("DOMContentLoaded", function () {
 
     revealElements.forEach(el => revealObserver.observe(el));
 });
+
+
+function buildProcessPath() {
+    const svg = document.querySelector('.process-svg');
+    const path = document.querySelector('.process-path');
+    const icons = document.querySelectorAll('.process-wrapper .step-icon-wrap');
+
+    if (!svg || !path || icons.length < 2) return;
+
+    const svgRect = svg.getBoundingClientRect();
+    if (svgRect.width === 0) return;
+
+    const VW = 1000; // viewBox width
+    const VH = 200;  // viewBox height
+
+    // Map each icon center to SVG viewBox coordinates
+    const pts = Array.from(icons).map(icon => {
+        const r = icon.getBoundingClientRect();
+        return {
+            x: ((r.left + r.width / 2) - svgRect.left) / svgRect.width * VW,
+            y: ((r.top + r.height / 2) - svgRect.top) / svgRect.height * VH
+        };
+    });
+
+    // Build smooth cubic bezier S-curve through all points
+    let d = `M ${pts[0].x.toFixed(1)},${pts[0].y.toFixed(1)}`;
+    for (let i = 0; i < pts.length - 1; i++) {
+        const a = pts[i];
+        const b = pts[i + 1];
+        const cx = (a.x + b.x) / 2; // control point x halfway between
+        d += ` C ${cx.toFixed(1)},${a.y.toFixed(1)} ${cx.toFixed(1)},${b.y.toFixed(1)} ${b.x.toFixed(1)},${b.y.toFixed(1)}`;
+    }
+
+    path.setAttribute('d', d);
+}
+
+// Run once the full layout (including images) has painted
+window.addEventListener('load', buildProcessPath);
+window.addEventListener('resize', buildProcessPath);
+
 

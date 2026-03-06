@@ -637,7 +637,7 @@ body {
 /* Hero Section Styling */
 .hero-section {
     position: relative;
-    height: 65vh;
+    height: 75vh;
     /* min-height: 700px; */
     width: 100%;
     overflow: hidden;
@@ -702,10 +702,17 @@ body {
 
 }
 
+.solution-title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
 .title-badge-wrapper {
     position: relative;
     display: inline-block;
-    background: url('assets/bg-1.jpg');
+    background-image: url('assets/bg-1.jpg');
     /* Using a bg as placeholder for the small badge */
     background-size: cover;
     background-position: center;
@@ -802,7 +809,7 @@ body {
     transform: translateY(0);
     animation: girlEntrance 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
     display: block;
-    bottom: -22px;
+    bottom: -72px;
 }
 
 @keyframes girlEntrance {
@@ -1245,16 +1252,20 @@ body {
         transform: translateX(-50%);
         width: 230px !important;
     }
+
     .satisfied-customers-card h3 {
-    margin: 0;
-    font-size: 32px;
-    font-weight: 800;
-    color: var(--dark-navy);
-}
-    .hero-girl-img{
-        width: 100%;
+        margin: 0;
+        font-size: 32px;
+        font-weight: 800;
+        color: var(--dark-navy);
     }
-    .about-section{
+
+    .hero-girl-img {
+        width: 100%;
+        bottom: 0px;
+    }
+
+    .about-section {
         padding: 50px 0;
     }
 }
@@ -1336,61 +1347,64 @@ body {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-.hero-title {
-    font-size: 55px !important;
-    font-weight: 600;
-    line-height: 1.1;
-    margin-bottom: 25px;
-    font-family: "Onest", sans-serif;
-}
+    .hero-title {
+        font-size: 55px !important;
+        font-weight: 600;
+        line-height: 1.1;
+        margin-bottom: 25px;
+        font-family: "Onest", sans-serif;
+    }
 
-.hero-girl-img{
-    width: 120%;
-    position: relative;
-    right: -20%;
-    /* bottom: -80px !important; */
-}
-.satisfied-customers-card{
-    left: -20% !important;
-}
+    .hero-girl-img {
+        width: 120%;
+        position: relative;
+        right: -20%;
+        /* bottom: -80px !important; */
+    }
 
-.about-title{
-    font-size: 30px;
-}
+    .satisfied-customers-card {
+        left: -20% !important;
+    }
+
+    .about-title {
+        font-size: 30px;
+    }
 }
 
 @media (min-width: 1400px) and (max-width: 1700px) {
     .hero-title {
-    font-size: 50px !important;
-    font-weight: 600;
-    line-height: 1.1;
-    margin-bottom: 25px;
-    font-family: "Onest", sans-serif;
-}
-.hero-girl-img{
-    width: 110%;
-    position: relative;
-    right: -18%;
-    /* bottom: -80px !important; */
-}
+        font-size: 50px !important;
+        font-weight: 600;
+        line-height: 1.1;
+        margin-bottom: 25px;
+        font-family: "Onest", sans-serif;
+    }
+
+    .hero-girl-img {
+        width: 110%;
+        position: relative;
+        right: -18%;
+        /* bottom: -80px !important; */
+    }
 }
 
 
 
 @media (min-width: 992px) and (max-width: 1280px) {
-   .hero-title {
-    font-size: 50px !important;
-    font-weight: 600;
-    line-height: 1.1;
-    margin-bottom: 25px;
-    font-family: "Onest", sans-serif;
-}
-.hero-girl-img{
-    width: 110%;
-    position: relative;
-    right: -18%;
-    bottom: -50px !important;
-}
+    .hero-title {
+        font-size: 50px !important;
+        font-weight: 600;
+        line-height: 1.1;
+        margin-bottom: 25px;
+        font-family: "Onest", sans-serif;
+    }
+
+    .hero-girl-img {
+        width: 110%;
+        position: relative;
+        right: -18%;
+        /* bottom: -50px !important; */
+    }
 }
 
 
@@ -1434,4 +1448,759 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #4A90DA;
+}
+
+/* Brands Section Styling */
+.brands-section {
+    background-color: #f8f9fa;
+    /* Gray bg covering full width */
+    width: 100%;
+}
+
+.brands-track {
+    display: flex;
+    width: 200%;
+    /* 10 items total, 5 per view */
+    animation: slideTick 10s infinite;
+}
+
+.brands-track:hover {
+    animation-play-state: paused;
+}
+
+.brand-item {
+    flex: 0 0 10%;
+    /* 10% of track matches 20% of container (1/5th) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.brand-item img {
+    max-width: 100%;
+    height: 120px;
+    /* max-height: 100px; */
+    object-fit: contain;
+}
+
+/* 
+ Animation creates hold-and-move effect 
+ It moves 10% (one item width) each step.
+*/
+@keyframes slideTick {
+
+    0%,
+    15% {
+        transform: translateX(0);
+    }
+
+    20%,
+    35% {
+        transform: translateX(-10%);
+    }
+
+    40%,
+    55% {
+        transform: translateX(-20%);
+    }
+
+    60%,
+    75% {
+        transform: translateX(-30%);
+    }
+
+    80%,
+    95% {
+        transform: translateX(-40%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 991px) {
+    .brands-track {
+        width: 333.333%;
+        /* 3 items per view */
+    }
+}
+
+@media (max-width: 767px) {
+    .brands-track {
+        width: 500%;
+        /* 2 items per view */
+    }
+}
+
+@media (max-width: 575px) {
+    .brands-track {
+        width: 1000%;
+        /* 1 item per view */
+    }
+}
+
+/* Solutions Section Styling */
+.solutions-section {
+    background-color: #ffffff;
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.8fr;
+    grid-gap: 53px 26px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.sol-card {
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    padding: 60px 30px 60px 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease;
+}
+
+.sol-card:hover {
+    transform: scale(.98);
+    /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08); */
+}
+
+.sol-card-icon {
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.sol-card-icon .icon-inner {
+    width: 60px;
+    height: 60px;
+    border: 1.5px solid var(--primary-red);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-red);
+    font-size: 26px;
+}
+
+.icon-inner svg {
+    width: 40px;
+    height: 40px;
+}
+
+.sol-card h4 {
+    font-size: 22px;
+    color: var(--dark-navy);
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.sol-card p {
+    color: var(--text-gray);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.sol-read-more {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: white;
+    color: var(--primary-red);
+    font-weight: 700;
+    padding: 12px 25px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.sol-read-more::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--primary-red);
+    z-index: -1;
+    transition: width 0.4s ease;
+    border-top-right-radius: 20px;
+}
+
+.sol-read-more:hover {
+    color: white;
+}
+
+.sol-read-more:hover::before {
+    width: 100%;
+}
+
+.sol-img-wrapper {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sol-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.sol-img-wrapper:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.overlap-card {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    z-index: 5;
+    margin: 0;
+    box-shadow: 0 0 0 15px white;
+    height: 100%;
+    width: 55%;
+}
+
+@media (max-width: 1199px) {
+    .solutions-grid {
+        grid-gap: 60px 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .solutions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sol-img-wrapper {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        height: 400px;
+        order: 5;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    .overlap-card {
+        grid-column: auto;
+        grid-row: auto;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .solutions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sol-img-wrapper {
+        height: 300px;
+    }
+}
+
+/* Icon Animations */
+.anim-spin {
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.anim-shake {
+    animation: shake 2s ease-in-out infinite;
+    transform-origin: bottom center;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: rotate(-5deg);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: rotate(5deg);
+    }
+}
+
+.anim-wiggle {
+    animation: wiggle 3s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes wiggle {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+}
+
+.anim-drive {
+    animation: drive 3s linear infinite;
+}
+
+@keyframes drive {
+    0% {
+        transform: translateX(40px);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+}
+
+.anim-steer {
+    animation: steer 3s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes steer {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-30deg);
+    }
+
+    75% {
+        transform: rotate(30deg);
+    }
+}
+
+/* Discount Section Styling */
+.discount-section {
+    position: relative;
+    background-image: linear-gradient(rgba(10, 19, 74, 0.88), rgba(10, 19, 74, 0.88)), url('../assets/bg-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.discount-subtitle {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.discount-title {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 35px;
+    color: white;
+}
+
+.discount-progress {
+    margin-bottom: 45px;
+    max-width: 90%;
+}
+
+.discount-progress .progress-item span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.discount-progress .progress-percent {
+    position: absolute;
+    right: 0;
+    top: -35px;
+    transform: translateX(50%);
+    background-color: var(--primary-red);
+    padding: 3px 12px;
+    border-radius: 4px;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.discount-progress .progress-percent::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px 5px 0;
+    border-style: solid;
+    border-color: var(--primary-red) transparent transparent transparent;
+}
+
+.discount-progress .progress {
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Slightly transparent track */
+    border-radius: 0;
+    overflow: visible;
+    /* Allows the percent tag to float outside */
+}
+
+.discount-progress .progress-bar {
+    border-radius: 0;
+    position: relative;
+    overflow: visible;
+}
+
+/* Handling animations elegantly through script.js loops for perfect tooltip counting execution */
+
+.happy-customers {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatars-group {
+    display: flex;
+    align-items: center;
+}
+
+.avatars-group img,
+.avatars-group .plus-circle {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-left: -15px;
+    object-fit: cover;
+}
+
+.avatars-group img:first-child {
+    margin-left: 0;
+}
+
+.avatars-group .plus-circle {
+    background-color: var(--primary-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.happy-text span {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.discount-card {
+    background-color: rgba(6, 11, 40, 0.4);
+    padding: 60px 50px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+}
+
+.discount-card h3 {
+    font-size: 42px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.discount-card p {
+    font-size: 16px;
+    color: #dfdfdf;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+@media (max-width: 991px) {
+    .discount-card {
+        margin-top: 50px;
+    }
+
+    .discount-title {
+        font-size: 36px;
+    }
+
+    .discount-card h3 {
+        font-size: 34px;
+    }
+}
+
+/* =============================================
+   Work Process Section
+   ============================================= */
+.work-process-section {
+    background-color: #f8f9fa;
+}
+
+/* Wrapper: relative container for SVG + step grid */
+.process-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    min-height: 340px;
+    padding: 20px 0 40px;
+}
+
+/* ---- SVG Connector ---- */
+.process-svg {
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    width: 92%;
+    height: 200px;
+    transform: translateY(-52%);
+    pointer-events: none;
+    z-index: 0;
+    overflow: visible;
+}
+
+.process-path {
+    fill: none;
+    stroke: #c0c0c0;
+    stroke-width: 2.5;
+    stroke-dasharray: 10 8;
+    stroke-linecap: round;
+    /* Animation: draw the path in a loop */
+    stroke-dashoffset: 2000;
+    animation: drawPath 10s linear infinite;
+}
+
+@keyframes drawPath {
+    0% {
+        stroke-dashoffset: 2000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* ---- Each Step ---- */
+.process-step {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+}
+
+/* Odd steps sit at the TOP half */
+.step-top {
+    align-self: start;
+    padding-top: 0;
+}
+
+/* Even steps sit at the BOTTOM half */
+.step-bottom {
+    align-self: end;
+    padding-bottom: 0;
+}
+
+/* ---- Red Number Badge ---- */
+.step-badge {
+    width: 42px;
+    height: 42px;
+    background: var(--primary-red);
+    color: white;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    box-shadow: 0 6px 18px rgba(227, 0, 11, 0.35);
+    transition: transform 0.3s ease;
+}
+
+.process-step:hover .step-badge {
+    transform: scale(1.15);
+}
+
+/* ---- Circular Icon ---- */
+.step-icon-wrap {
+    width: 90px;
+    height: 90px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: var(--primary-red);
+    margin-bottom: 18px;
+    transition: all 0.35s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.process-step:hover .step-icon-wrap {
+    background: var(--primary-red);
+    color: white;
+    border-color: var(--primary-red);
+    transform: scale(1.08);
+    box-shadow: 0 8px 24px rgba(227, 0, 11, 0.3);
+}
+
+/* ---- Text ---- */
+.step-content h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark-navy);
+    margin-bottom: 8px;
+}
+
+.step-content p {
+    font-size: 14px;
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* =============================================
+   Work Process — Responsive
+   ============================================= */
+@media (max-width: 991px) {
+
+    /* 2-per-row grid with extra top padding for icons poking out */
+    .process-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        min-height: auto;
+        gap: 70px 20px;
+        padding: 60px 0 30px;
+    }
+
+    /* No thread on mobile */
+    .process-svg {
+        display: none;
+    }
+
+    /* Reset top/bottom alignment — all cards equal height */
+    .step-top,
+    .step-bottom {
+        align-self: auto;
+    }
+
+    /* --- Card Design --- */
+    .process-step {
+        background: white;
+        border-radius: 16px;
+        padding: 55px 20px 28px;
+        box-shadow: 0 6px 28px rgba(0, 0, 0, 0.09);
+        position: relative;
+        margin-top: 45px;
+        /* space above card for icon overflow */
+    }
+
+    /* Icon container: absolute, floats above card top-center */
+    .step-icon-container {
+        position: absolute;
+        top: -45px;
+        /* half of the 90px icon = 45px above card edge */
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Badge: small dot at top-right of the icon circle */
+    .step-icon-container .step-badge {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        left: auto;
+        transform: none;
+        width: 36px;
+        height: 36px;
+        font-size: 13px;
+        z-index: 4;
+    }
+
+    /* Remove bottom margin from icon since container handles spacing */
+    .step-icon-wrap {
+        margin: 0;
+    }
+}
+
+/* Keep 2 columns on small phones too (no single-column) */
+@media (max-width: 575px) {
+    .process-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 70px 12px;
+        padding: 60px 0 20px;
+    }
+
+    .step-content h4 {
+        font-size: 15px;
+    }
+
+    .step-content p {
+        font-size: 13px;
+    }
 }
