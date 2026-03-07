@@ -159,6 +159,7 @@ body {
     gap: 15px;
     transition: 0.3s;
     font-size: 16px;
+    border: none;
 }
 
 .btn-book-now .arrow-icon {
@@ -1217,10 +1218,12 @@ body {
     .about-call-box {
         display: none;
     }
-    .automart{
+
+    .automart {
         display: none;
     }
-    .blog-img{
+
+    .blog-img {
         height: 125px !important;
     }
 }
@@ -4317,5 +4320,471 @@ body {
     .footer-legal {
         justify-content: center !important;
         margin-top: 15px;
+    }
+}
+
+/* ==========================================================================
+   Premium Book Form Modal
+   ========================================================================== */
+.premium-modal-content {
+    /* background: rgba(255, 255, 255, 0.95); */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 24px;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    animation: modalSlideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.premium-modal-content .modal-header {
+    background: var(--dark-navy);
+    padding: 35px 40px;
+    position: relative;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.premium-modal-content .modal-header .btn-close {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    background-color: #fff;
+    opacity: 1;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.premium-modal-content .modal-header .btn-close:hover {
+    transform: rotate(90deg) scale(1.1);
+}
+
+.modal-title-wrapper .modal-subtitle {
+    color: var(--primary-red);
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.modal-title-wrapper .modal-title {
+    color: var(--white);
+    font-weight: 800;
+    font-size: 32px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.premium-form .form-label {
+    color: var(--dark-navy);
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.premium-form .input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.premium-form .input-wrapper i {
+    position: absolute;
+    left: 18px;
+    color: var(--primary-red);
+    font-size: 16px;
+    z-index: 5;
+    transition: all 0.3s ease;
+}
+
+.premium-form .form-control {
+    padding: 14px 20px 14px 50px !important;
+    border: 2px solid #f0f0f0;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background: #f8f9fc;
+}
+
+.premium-form .form-control:focus {
+    background: #fff;
+    border-color: var(--primary-red);
+    box-shadow: 0 10px 25px rgba(227, 0, 11, 0.08);
+    outline: none;
+}
+
+.premium-form .form-control:focus+i {
+    transform: scale(1.2);
+}
+
+.country-code-span {
+    background: #f8f9fc !important;
+    border: 2px solid #f0f0f0 !important;
+    border-right: none !important;
+    border-radius: 12px 0 0 12px !important;
+    padding: 0 10px !important;
+}
+
+.phone-select {
+    font-weight: 700;
+    color: var(--dark-navy);
+    cursor: pointer;
+}
+
+.premium-form .input-group .form-control {
+    border-radius: 0 12px 12px 0;
+}
+
+.premium-form .input-group .input-wrapper {
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+}
+
+.premium-form .btn-book-now {
+    margin-top: 15px;
+    padding: 16px 30px;
+    font-size: 17px;
+    border-radius: 14px;
+    width: 100%;
+    border: none;
+}
+
+/* Hover & Active states for buttons in modal */
+.premium-form .btn-book-now:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(227, 0, 11, 0.2);
+}
+
+.premium-form .btn-book-now:active {
+    transform: translateY(-1px);
+}
+
+/* Responsive adjustments for modal */
+@media (max-width: 576px) {
+    .premium-modal-content .modal-header {
+        padding: 25px 30px;
+    }
+
+    .modal-title-wrapper .modal-title {
+        font-size: 24px;
+    }
+
+    .premium-modal-content .modal-header .btn-close {
+        top: 25px;
+        right: 25px;
+        padding: 8px;
+    }
+}
+
+/* ==========================================================================
+   About Page Specific Styles
+   ========================================================================== */
+.page-breadcrumb {
+    padding: 120px 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.page-breadcrumb::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(10, 19, 74, 0.9), rgba(10, 19, 74, 0.7));
+    z-index: -1;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "\f105";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.5);
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.about-page-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-page-img-wrap {
+    position: relative;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.about-page-img-wrap .main-img {
+    border-radius: 30px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.experience-float-badge {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: var(--primary-red);
+    color: white;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(227, 0, 11, 0.3);
+    animation: floatAnim 3s ease-in-out infinite;
+    z-index: 2;
+}
+
+@keyframes floatAnim {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.experience-float-badge h3 {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1;
+}
+
+.experience-float-badge p {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-page-content .about-subtitle {
+    color: var(--primary-red);
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.about-page-content h2 {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--dark-navy);
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.about-page-content .lead-text {
+    font-size: 18px;
+    color: var(--text-gray);
+    margin-bottom: 30px;
+}
+
+.feature-list {
+    margin-bottom: 40px;
+}
+
+.feature-list-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: var(--dark-navy);
+}
+
+.feature-list-item i {
+    width: 30px;
+    height: 30px;
+    background: rgba(227, 0, 11, 0.1);
+    color: var(--primary-red);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.mission-vision-card {
+    background: #f8f9fc;
+    padding: 50px;
+    border-radius: 30px;
+    border: 1px solid #eee;
+    height: 100%;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mission-vision-card:hover {
+    background: white;
+    transform: translateY(-10px);
+    box-shadow: 0 40px 80px rgba(10, 19, 74, 0.1);
+    border-color: var(--primary-red);
+}
+
+.card-icon-pill {
+    width: 60px;
+    height: 60px;
+    background: var(--dark-navy);
+    color: white;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.mission-vision-card:hover .card-icon-pill {
+    background: var(--primary-red);
+    transform: rotate(10deg);
+}
+
+@media (max-width: 991px) {
+    .about-page-content h2 {
+        font-size: 36px;
+    }
+
+    .about-page-img-wrap {
+        padding-right: 0;
+        padding-bottom: 0;
+        margin-bottom: 50px;
+    }
+}
+
+/* ==========================================================================
+   Contact Page Specific Styles
+   ========================================================================== */
+.contact-info-card {
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 15px 45px rgba(10, 19, 74, 0.05);
+    height: 100%;
+    transition: all 0.4s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-red);
+    box-shadow: 0 30px 60px rgba(227, 0, 11, 0.1);
+}
+
+.contact-icon-box {
+    width: 70px;
+    height: 70px;
+    background: rgba(227, 0, 11, 0.1);
+    color: var(--primary-red);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin: 0 auto 25px;
+    transition: 0.3s;
+}
+
+.contact-info-card:hover .contact-icon-box {
+    background: var(--primary-red);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.contact-info-card h4 {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--dark-navy);
+    margin-bottom: 15px;
+}
+
+.contact-info-card p {
+    color: var(--text-gray);
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.contact-form-wrapper {
+    background: white;
+    padding: 50px;
+    border-radius: 40px;
+    box-shadow: 0 40px 100px rgba(10, 19, 74, 0.08);
+}
+
+.contact-form-wrapper h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--dark-navy);
+    margin-bottom: 30px;
+}
+
+.contact-map-iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    border-radius: 40px;
+    filter: grayscale(0.2);
+    border: none;
+}
+
+.contact-form .form-control {
+    background: #f8f9fc;
+    border: 2px solid #f8f9fc;
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.contact-form .form-control:focus {
+    background: white;
+    border-color: var(--primary-red);
+    box-shadow: none;
+}
+
+.contact-form textarea.form-control {
+    min-height: 150px;
+}
+
+@media (max-width: 991px) {
+    .contact-form-wrapper {
+        padding: 30px;
+    }
+
+    .contact-map-iframe {
+        min-height: 350px;
+        margin-top: 30px;
     }
 }

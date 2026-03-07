@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automart - Car Detailing Services</title>
+    <link rel="icon" href="assets/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header class="main-header">
+        <!-- Top Bar -->
+        <div class="top-bar d-none d-lg-block">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3">
+                        <div class="top-info-box">
+                            <div class="red-header-tab"></div>
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="info-content">
+                                <span>Location Address:</span>
+                                <p>New york city, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="top-info-box">
+                            <div class="red-header-tab"></div>
+                            <div class="icon-wrapper">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <span>Email Address:</span>
+                                <p>domain@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="top-info-box">
+                            <div class="red-header-tab"></div>
+                            <div class="icon-wrapper">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <span>Opening Hours :</span>
+                                <p>8:00 AM to 8:00 PM (Sat to Thu)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 text-end">
+                        <a href="#" class="btn-book-now btn-effect-hover-jelly ms-auto" data-bs-target="#ModalTogglesix"
+                            data-bs-toggle="modal">
+                            <span class="btn-text">Book Now</span>
+                            <span class="arrow-icon">
+                                <i class="fa-solid fa-angles-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navbar -->
+        <div class="navbar-full-width">
+            <!-- Wing Fill Left -->
+            <div class="navy-wing-left"></div>
+
+            <div class="container p-0">
+                <div class="navbar-main-content">
+                    <!-- Left Navy Segment (Shaped correctly) -->
+                    <div class="nav-segment-left"></div>
+
+                    <!-- Logo Section (White box) -->
+                    <div class="logo-section">
+                        <a href="index.html" target="_self"><img src="assets/logo-1.png" alt="The website's logo"
+                                class="logo-image"></a>
+                    </div>
+
+                    <!-- Right Navy Segment (Main Menu) -->
+                    <div class="nav-segment-right">
+                        <ul class="main-nav-links">
+                            <li><a class="nav-link" href="index.html">Home</a></li>
+                            <li><a class="nav-link" href="about.html">About</a></li>
+                            <li class="has-dropdown">
+                                <a class="nav-link" href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="dropdown-submenu">
+                                    <li><a href="#">Car Washing</a></li>
+                                    <li><a href="#">Vacuum Cleaning</a></li>
+                                    <li><a href="#">Engine Cleaning</a></li>
+                                    <li><a href="#">Interior Wet Cleaning</a></li>
+                                    <li><a href="#">Window Wiping</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a class="nav-link" href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="dropdown-submenu">
+                                    <li><a href="#">Our Team</a></li>
+                                    <li><a href="#">Pricing Plan</a></li>
+                                    <li><a href="#">FAQ's</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a class="nav-link" href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="dropdown-submenu">
+                                    <li><a href="#">Latest News</a></li>
+                                    <li><a href="#">Standard Post</a></li>
+                                    <li><a href="#">Video Post</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav-link" href="contactus.html">Contact</a></li>
+                        </ul>
+
+                        <div class="menu-toggle d-lg-none" id="menuToggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="call-box d-none d-xl-flex">
+                            <div class="call-btn-circle">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div class="call-text">
+                                <span>Call Any Time</span>
+                                <p>(+123) 666 79 88</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wing Fill Right -->
+            <div class="navy-wing-right"></div>
+        </div>
+    </header>
+
+
+
+
+    <!-- Page Header Start -->
+    <section class="page-breadcrumb" style="background-image: url('assets/bg-2.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="text-white fw-bold display-3 mb-3 animate-entrance">About Us</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center m-0">
+                            <li class="breadcrumb-item"><a href="index.html"
+                                    class="text-white-50 text-decoration-none">Home</a></li>
+                            <li class="breadcrumb-item active text-white" aria-current="page">About Us</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Page Header End -->
+
+    <!-- About Content Start -->
+    <section class="about-page-section py-5 my-lg-5">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 reveal reveal-fade-left">
+                    <div class="about-page-img-wrap">
+                        <img src="assets/man-back.jpg" alt="Automart Professional" class="main-img">
+                        <div class="experience-float-badge">
+                            <h3>15+</h3>
+                            <p>Years of<br>Service</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 reveal reveal-fade-right">
+                    <div class="about-page-content">
+                        <span class="about-subtitle underline-red">OUR STORY</span>
+                        <h2>Providing Expert Vehicle Solutions Since 2008</h2>
+                        <p class="lead-text">At Automart, we believe every car deserves premium care. What started as a
+                            small garage has grown into a world-class detailing and repair facility.</p>
+                        <p class="text-muted mb-4">Our journey is fueled by a passion for automotive perfection. We
+                            combine traditional craftsmanship with the latest technology to deliver results that not
+                            only meet but exceed our clients' expectations. Whether it's a minor scratch or a full
+                            engine restoration, we treat every vehicle as if it were our own.</p>
+
+                        <div class="feature-list">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="feature-list-item">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Certified Technicians</span>
+                                    </div>
+                                    <div class="feature-list-item">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Modern Equipment</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="feature-list-item">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Premium Materials</span>
+                                    </div>
+                                    <div class="feature-list-item">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>24/7 Quality Support</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="contactus.html" class="btn-book-now btn-effect-hover-jelly">
+                            <span class="btn-text">Get A Quote</span>
+                            <span class="arrow-icon"><i class="fa-solid fa-angles-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mission/Vision Grid -->
+            <div class="row mt-5 pt-lg-5 g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="mission-vision-card reveal reveal-fade-up">
+                        <div class="card-icon-pill">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h4 class="fw-bold text-navy mb-3">Our Mission</h4>
+                        <p class="text-muted">To deliver the highest standard of automotive detailing and repair
+                            services through innovation, integrity, and absolute dedication to quality.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="mission-vision-card reveal reveal-fade-up" style="transition-delay: 0.2s;">
+                        <div class="card-icon-pill">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h4 class="fw-bold text-navy mb-3">Our Vision</h4>
+                        <p class="text-muted">To become the global leader in vehicle restoration, recognized for our
+                            craft and the trust we build with every client around the world.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="mission-vision-card reveal reveal-fade-up" style="transition-delay: 0.4s;">
+                        <div class="card-icon-pill">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <h4 class="fw-bold text-navy mb-3">Our Core Values</h4>
+                        <p class="text-muted">Transparency, Precision, Reliability, and Passion. These values drive our
+                            team to excel in every service we provide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Content End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="cta-banner-section position-relative py-5">
+        <div class="cta-overlay"></div>
+        <div class="container position-relative z-2">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <span class="text-white fw-bold text-uppercase small letter-spacing-2">GET OUR SERVICE</span>
+                    <h2 class="display-4 fw-bold text-white mt-2">Trusted Car Repair Experts<br>Get In Touch Today!
+                    </h2>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                    <a href="#" class="btn-get-details" data-bs-target="#ModalTogglesix" data-bs-toggle="modal">
+                        Get Details
+                        <span class="arrow-circle"><i class="fa-solid fa-angles-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section End -->
+
+    <!-- FOOTER Section Start -->
+    <footer class="footer-area position-relative pb-4">
+        <!-- Animated Existing SVG Gears Background -->
+        <div class="footer-gears-container">
+            <!-- Gear 1 -->
+            <div class="footer-gear gear-1">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="180"
+                    height="180">
+                    <path
+                        d="M8.932.727c-.243-.97-1.62-.97-1.864 0l-.071.286a.96.96 0 0 1-1.622.434l-.205-.211c-.695-.719-1.888-.03-1.613.931l.08.284a.96.96 0 0 1-1.186 1.187l-.284-.081c-.96-.275-1.65.918-.931 1.613l.211.205a.96.96 0 0 1-.434 1.622l-.286.071c-.97.243-.97 1.62 0 1.864l.286.071a.96.96 0 0 1 .434 1.622l-.211.205c-.719.695-.03 1.888.931 1.613l.284-.08a.96.96 0 0 1 1.187 1.187l-.081.283c-.275.96.918 1.65 1.613.931l.205-.211a.96.96 0 0 1 1.622.434l.071.286c.243.97 1.62.97 1.864 0l.071-.286a.96.96 0 0 1 1.622-.434l.205.211c.695.719 1.888.03 1.613-.931l-.08-.284a.96.96 0 0 1 1.187-1.187l.283.081c.96.275 1.65-.918.931-1.613l-.211-.205a.96.96 0 0 1 .434-1.622l-.286-.071c.97-.243.97-1.62 0-1.864l-.286-.071a.96.96 0 0 1-.434-1.622l.211-.205c.719-.695.03-1.888-.931-1.613l-.284.08a.96.96 0 0 1-1.187-1.186l.081-.284c.275-.96-.918-1.65-1.613-.931l-.205.211a.96.96 0 0 1-1.622-.434L8.932.727zM8 12.997a4.998 4.998 0 1 1 0-9.995 4.998 4.998 0 0 1 0 9.996z" />
+                </svg>
+            </div>
+            <!-- Gear 2 -->
+            <div class="footer-gear gear-2">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="220" height="220">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M17.2994 10.4527L19.2267 10.7677C19.3846 10.7935 19.5003 10.9298 19.5 11.0896V12.883C19.5 13.0412 19.3865 13.1768 19.2303 13.2042L17.3004 13.543C17.1885 13.9298 17.0349 14.3022 16.8415 14.6543L17.9823 16.2382C18.0759 16.3679 18.0612 16.5463 17.9483 16.6595L16.6804 17.9283C16.5682 18.0401 16.3921 18.0561 16.2623 17.9645L14.6627 16.8424C14.3099 17.0387 13.9352 17.1952 13.5442 17.3103L13.2034 19.231C13.176 19.3865 13.0406 19.5 12.8825 19.5H11.0888C10.9294 19.5 10.7934 19.3849 10.7676 19.228L10.4493 17.3168C10.059 17.204 9.6823 17.0485 9.32585 16.8525L7.73767 17.9648C7.60821 18.0558 7.43178 18.0401 7.31992 17.9283L6.05198 16.6595C5.93947 16.5463 5.9248 16.3686 6.01741 16.2391L7.13958 14.6697C6.94163 14.3116 6.78444 13.9337 6.67062 13.5414L4.76905 13.2042C4.61349 13.1765 4.5 13.0412 4.5 12.883V11.0896C4.5 10.9304 4.61544 10.7941 4.77263 10.768L6.67421 10.4514C6.78868 10.0582 6.94586 9.68022 7.14316 9.32315L6.0347 7.73739C5.94371 7.60793 5.95937 7.43185 6.07122 7.32L7.33883 6.0525C7.452 5.94 7.62908 5.925 7.7592 6.01793L9.33433 7.14293C9.68817 6.94924 10.0639 6.795 10.4552 6.6825L10.767 4.77359C10.7927 4.61576 10.929 4.5 11.0888 4.5H12.8825C13.041 4.5 13.1763 4.61413 13.2037 4.77L13.5399 6.68935C13.929 6.8025 14.304 6.95837 14.6591 7.15467L16.2385 6.01957C16.3683 5.92598 16.5464 5.94065 16.6595 6.05348L17.9278 7.32098C18.0397 7.43315 18.0553 7.60957 17.9643 7.73902L16.8392 9.34239C17.0323 9.69424 17.1865 10.066 17.2994 10.4527ZM9.71725 12C9.71725 13.2607 10.7393 14.2826 12.0001 14.2826C13.2608 14.2826 14.2829 13.2607 14.2829 12C14.2829 10.7394 13.2608 9.71742 12.0001 9.71742C10.7393 9.71742 9.71725 10.7394 9.71725 12Z"
+                        stroke="currentColor" />
+                </svg>
+            </div>
+            <!-- Gear 3 -->
+            <div class="footer-gear gear-3">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="150"
+                    height="150">
+                    <path
+                        d="M8.932.727c-.243-.97-1.62-.97-1.864 0l-.071.286a.96.96 0 0 1-1.622.434l-.205-.211c-.695-.719-1.888-.03-1.613.931l.08.284a.96.96 0 0 1-1.186 1.187l-.284-.081c-.96-.275-1.65.918-.931 1.613l.211.205a.96.96 0 0 1-.434 1.622l-.286.071c-.97.243-.97 1.62 0 1.864l.286.071a.96.96 0 0 1 .434 1.622l-.211.205c-.719.695-.03 1.888.931 1.613l.284-.08a.96.96 0 0 1 1.187 1.187l-.081.283c-.275.96.918 1.65 1.613.931l.205-.211a.96.96 0 0 1 1.622.434l.071.286c.243.97 1.62.97 1.864 0l.071-.286a.96.96 0 0 1 1.622-.434l.205.211c.695.719 1.888.03 1.613-.931l-.08-.284a.96.96 0 0 1 1.187-1.187l.283.081c.96.275 1.65-.918.931-1.613l-.211-.205a.96.96 0 0 1 .434-1.622l-.286-.071c.97-.243.97-1.62 0-1.864l-.286-.071a.96.96 0 0 1-.434-1.622l.211-.205c.719-.695.03-1.888-.931-1.613l-.284.08a.96.96 0 0 1-1.187-1.186l.081-.284c.275-.96-.918-1.65-1.613-.931l-.205.211a.96.96 0 0 1-1.622-.434L8.932.727zM8 12.997a4.998 4.998 0 1 1 0-9.995 4.998 4.998 0 0 1 0 9.996z" />
+                </svg>
+            </div>
+            <!-- Gear 4 (Extra Large) -->
+            <div class="footer-gear gear-4">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="380" height="380">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M17.2994 10.4527L19.2267 10.7677C19.3846 10.7935 19.5003 10.9298 19.5 11.0896V12.883C19.5 13.0412 19.3865 13.1768 19.2303 13.2042L17.3004 13.543C17.1885 13.9298 17.0349 14.3022 16.8415 14.6543L17.9823 16.2382C18.0759 16.3679 18.0612 16.5463 17.9483 16.6595L16.6804 17.9283C16.5682 18.0401 16.3921 18.0561 16.2623 17.9645L14.6627 16.8424C14.3099 17.0387 13.9352 17.1952 13.5442 17.3103L13.2034 19.231C13.176 19.3865 13.0406 19.5 12.8825 19.5H11.0888C10.9294 19.5 10.7934 19.3849 10.7676 19.228L10.4493 17.3168C10.059 17.204 9.6823 17.0485 9.32585 16.8525L7.73767 17.9648C7.60821 18.0558 7.43178 18.0401 7.31992 17.9283L6.05198 16.6595C5.93947 16.5463 5.9248 16.3686 6.01741 16.2391L7.13958 14.6697C6.94163 14.3116 6.78444 13.9337 6.67062 13.5414L4.76905 13.2042C4.61349 13.1765 4.5 13.0412 4.5 12.883V11.0896C4.5 10.9304 4.61544 10.7941 4.77263 10.768L6.67421 10.4514C6.78868 10.0582 6.94586 9.68022 7.14316 9.32315L6.0347 7.73739C5.94371 7.60793 5.95937 7.43185 6.07122 7.32L7.33883 6.0525C7.452 5.94 7.62908 5.925 7.7592 6.01793L9.33433 7.14293C9.68817 6.94924 10.0639 6.795 10.4552 6.6825L10.767 4.77359C10.7927 4.61576 10.929 4.5 11.0888 4.5H12.8825C13.041 4.5 13.1763 4.61413 13.2037 4.77L13.5399 6.68935C13.929 6.8025 14.304 6.95837 14.6591 7.15467L16.2385 6.01957C16.3683 5.92598 16.5464 5.94065 16.6595 6.05348L17.9278 7.32098C18.0397 7.43315 18.0553 7.60957 17.9643 7.73902L16.8392 9.34239C17.0323 9.69424 17.1865 10.066 17.2994 10.4527ZM9.71725 12C9.71725 13.2607 10.7393 14.2826 12.0001 14.2826C13.2608 14.2826 14.2829 13.2607 14.2829 12C14.2829 10.7394 13.2608 9.71742 12.0001 9.71742C10.7393 9.71742 9.71725 10.7394 9.71725 12Z"
+                        stroke="currentColor" />
+                </svg>
+            </div>
+            <!-- Gear 5 (Mini) -->
+            <div class="footer-gear gear-5">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="100"
+                    height="100">
+                    <path
+                        d="M8.932.727c-.243-.97-1.62-.97-1.864 0l-.071.286a.96.96 0 0 1-1.622.434l-.205-.211c-.695-.719-1.888-.03-1.613.931l.08.284a.96.96 0 0 1-1.186 1.187l-.284-.081c-.96-.275-1.65.918-.931 1.613l.211.205a.96.96 0 0 1-.434 1.622l-.286.071c-.97.243-.97 1.62 0 1.864l.286.071a.96.96 0 0 1 .434 1.622l-.211.205c-.719.695-.03 1.888.931 1.613l.284-.08a.96.96 0 0 1 1.187 1.187l-.081.283c-.275.96.918 1.65 1.613.931l.205-.211a.96.96 0 0 1 1.622.434l.071.286c.243.97 1.62.97 1.864 0l.071-.286a.96.96 0 0 1 1.622-.434l.205.211c.695.719 1.888.03 1.613-.931l-.08-.284a.96.96 0 0 1 1.187-1.187l.283.081c.96.275 1.65-.918.931-1.613l-.211-.205a.96.96 0 0 1 .434-1.622l-.286-.071c.97-.243.97-1.62 0-1.864l-.286-.071a.96.96 0 0 1-.434-1.622l.211-.205c.719-.695.03-1.888-.931-1.613l-.284.08a.96.96 0 0 1-1.187-1.186l.081-.284c.275-.96-.918-1.65-1.613-.931l-.205.211a.96.96 0 0 1-1.622-.434L8.932.727zM8 12.997a4.998 4.998 0 1 1 0-9.995 4.998 4.998 0 0 1 0 9.996z" />
+                </svg>
+            </div>
+        </div>
+        <div class="container pt-5 pb-0 position-relative z-2">
+            <div class="row py-5 g-5">
+                <!-- Col 1: Logo & Newsletter -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget pe-lg-4">
+                        <div class="footer-logo mb-4">
+                            <img src="assets/logo-1.png" alt="Automart Logo" width="160">
+                        </div>
+                        <p class="text-white small mb-4">Your trusted partner for reliable auto care and expert vehicle
+                            maintenance. We’re committed to keeping you safe on the road with quality service you can
+                            count on.</p>
+
+                        <h5 class="text-white fw-bold mb-3">Newsletter</h5>
+                        <div class="newsletter-wrap position-relative mb-4">
+                            <input type="email" class="footer-input" placeholder="Email address">
+                            <button class="newsletter-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+
+                        <div class="footer-socials d-flex gap-2">
+                            <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-pinterest-p"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 2: Our Services -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="text-white fw-bold mb-4 footer-title">Our Services</h4>
+                        <ul class="footer-links list-unstyled">
+                            <li><a href="#">Brake Check & Repair</a></li>
+                            <li><a href="#">Electrical System Repair</a></li>
+                            <li><a href="#">Oil Change & Maintenance</a></li>
+                            <li><a href="#">Wheel Alignment & Balancing</a></li>
+                            <li><a href="#">Electrical System Repair</a></li>
+                            <li><a href="#">Oil Change & Maintenance</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Col 3: Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="text-white fw-bold mb-4 footer-title">Quick Links</h4>
+                        <ul class="footer-links list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Pricing Plan</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="contactus.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Col 4: Our Offices -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="text-white fw-bold mb-4 footer-title">Our Offices</h4>
+                        <div class="office-box mb-4">
+                            <span class="text-red xs-text fw-bold d-block mb-1">Headquarters - USA</span>
+                            <h5 class="text-white fw-bold">Seattle (Major City In The State Washington).</h5>
+                        </div>
+                        <div class="office-box">
+                            <span class="text-red xs-text fw-bold d-block mb-1">Operations - China</span>
+                            <h5 class="text-white fw-bold">Shanghai Major Global Financial Hub & China's Largest
+                                Cities</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="footer-bottom pt-4 pb-0 border-top border-secondary">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="text-white-50 small mb-md-0">Copyright © 2026 Automart. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <div class="footer-legal d-flex justify-content-md-end gap-3">
+                            <a href="#" class="text-white-50 small text-decoration-none">Terms of Service</a>
+                            <span class="text-white-50">|</span>
+                            <a href="#" class="text-white-50 small text-decoration-none">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER Section End -->
+
+    <!-- Sidebar Structure -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <a href="index.html" target="_self"><img src="assets/logo-1.png" alt="The website's logo"></a>
+            </div>
+            <button class="sidebar-close" id="sidebarClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <ul class="sidebar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="sidebar-has-dropdown">
+                    <a href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="sidebar-submenu">
+                        <li><a href="#">Car Washing</a></li>
+                        <li><a href="#">Vacuum Cleaning</a></li>
+                        <li><a href="#">Engine Cleaning</a></li>
+                        <li><a href="#">Interior Wet Cleaning</a></li>
+                        <li><a href="#">Window Wiping</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-has-dropdown">
+                    <a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="sidebar-submenu">
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Pricing Plan</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-has-dropdown">
+                    <a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="sidebar-submenu">
+                        <li><a href="#">Latest News</a></li>
+                        <li><a href="#">Standard Post</a></li>
+                        <li><a href="#">Video Post</a></li>
+                    </ul>
+                </li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+
+            <div class="sidebar-contact">
+                <div class="sidebar-contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <span>Location Address:</span>
+                        <p>New york city, USA</p>
+                    </div>
+                </div>
+                <div class="sidebar-contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <span>Email Address:</span>
+                        <p>domain@example.com</p>
+                    </div>
+                </div>
+                <div class="sidebar-contact-item">
+                    <i class="fa-regular fa-clock"></i>
+                    <div>
+                        <span>Opening Hours:</span>
+                        <p>8:00 AM to 8:00 PM (Sat to Thu)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Book Form Modal -->
+    <div class="modal fade" id="ModalTogglesix" tabindex="-1" aria-labelledby="BookModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content premium-modal-content">
+                <div class="modal-header border-0">
+                    <div class="modal-title-wrapper">
+                        <span class="modal-subtitle">BOOK NOW</span>
+                        <h2 class="modal-title" id="BookModalLabel">Book Your Service</h2>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="bookForm" class="premium-form">
+                        <div class="form-group mb-4">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="email" class="form-label">Email Address</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="phoneNumber" class="form-label">Phone Number</label>
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text country-code-span">
+                                    <select class="form-select border-0 bg-transparent phone-select"
+                                        style="width: auto;">
+                                        <option value="+1">+1</option>
+                                        <option value="+91">+91</option>
+                                    </select>
+                                </span>
+                                <div class="input-wrapper flex-grow-1">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <input type="tel" class="form-control border-start-0" id="phoneNumber"
+                                        placeholder="Phone Number" required style="padding-left: 45px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="businessName" class="form-label">Business Name</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <input type="text" class="form-control" id="businessName"
+                                    placeholder="Enter business name" required>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button type="submit"
+                                class="btn-book-now btn-effect-hover-jelly w-100 justify-content-center">
+                                <span class="btn-text">Schedule Now</span>
+                                <span class="arrow-icon">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

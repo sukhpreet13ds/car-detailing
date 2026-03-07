@@ -193,6 +193,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     revealElements.forEach(el => revealObserver.observe(el));
+
+    // Book Form Modal Handling
+    const bookForm = document.getElementById('bookForm');
+    if (bookForm) {
+        bookForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form button and text
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+
+            // Show loading state
+            submitBtn.innerHTML = '<span class="btn-text">Processing...</span><span class="arrow-icon"><i class="fa-solid fa-spinner fa-spin"></i></span>';
+            submitBtn.disabled = true;
+
+            // Simulate API call
+            setTimeout(() => {
+                submitBtn.innerHTML = '<span class="btn-text">Success! We will contact you.</span><span class="arrow-icon"><i class="fa-solid fa-check"></i></span>';
+                submitBtn.style.backgroundColor = '#28a745';
+
+                // Close modal after success
+                setTimeout(() => {
+                    const modalEl = document.getElementById('ModalTogglesix');
+                    const modal = bootstrap.Modal.getInstance(modalEl);
+                    if (modal) modal.hide();
+
+                    // Reset form
+                    setTimeout(() => {
+                        bookForm.reset();
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                        submitBtn.style.backgroundColor = '';
+                    }, 500);
+                }, 2000);
+            }, 1500);
+        });
+    }
 });
 
 
