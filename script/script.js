@@ -75,6 +75,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
         setInterval(nextSlide, 5000); // Change slide every 5 seconds
     }
+
+    // Video Modal Logic
+    const playBtn = document.getElementById('playBtn');
+    const videoModal = document.getElementById('videoModal');
+    const modalClose = document.getElementById('modalClose');
+    const videoIframe = document.getElementById('videoIframe');
+    const videoUrl = "https://www.youtube.com/embed/hBPvKna1Adw";
+
+    if (playBtn && videoModal && modalClose && videoIframe) {
+        playBtn.addEventListener('click', () => {
+            videoIframe.src = videoUrl;
+            videoModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        const closeVideo = () => {
+            videoModal.classList.remove('active');
+            videoIframe.src = ""; // Stop video
+            document.body.style.overflow = '';
+        };
+
+        modalClose.addEventListener('click', closeVideo);
+        videoModal.addEventListener('click', (e) => {
+            if (e.target === videoModal) closeVideo();
+        });
+    }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -295,3 +321,19 @@ window.addEventListener('resize', buildProcessPath);
     window.addEventListener('resize', resetLayout);
     resetLayout();
 })();
+
+// Contact Info Toggle (Mobile)
+function toggleContactInfo() {
+    const wrap = document.getElementById('mobileContactInfo');
+    const btn = document.querySelector('.btn-info-toggle');
+    if (!wrap || !btn) return;
+
+    const icon = btn.querySelector('i');
+    wrap.classList.toggle('show');
+
+    if (wrap.classList.contains('show')) {
+        icon.style.transform = 'rotate(180deg)';
+    } else {
+        icon.style.transform = 'rotate(0deg)';
+    }
+}

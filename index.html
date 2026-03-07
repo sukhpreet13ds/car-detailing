@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Automart - Car Detailing Services</title>
+    <link rel="icon" href="assets/favicon.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -196,7 +197,7 @@
                             <div class="card-top">
                                 <h3>24K+</h3>
                                 <div class="avatar-group">
-                                    <div class="avatar"><img src="assets/avatar-3.jpg" alt="User"></div>
+                                    <div class="avatar"><img src="assets/avatar-3.avif" alt="User"></div>
                                     <div class="avatar"><img src="assets/avatar-2.jpg" alt="User"></div>
                                     <div class="avatar"><img src="assets/avatar-1.jpg" alt="User"></div>
                                 </div>
@@ -551,7 +552,7 @@
 
                     <div class="happy-customers">
                         <div class="avatars-group">
-                            <img src="assets/avatar-3.jpg" alt="Avatar">
+                            <img src="assets/avatar-3.avif" alt="Avatar">
                             <img src="assets/avatar-2.jpg" alt="Avatar">
                             <img src="assets/avatar-1.jpg" alt="Avatar">
                             <div class="plus-circle"><i class="fa-solid fa-plus"></i></div>
@@ -757,6 +758,1186 @@
     </section>
     <!-- Team Section End -->
 
+    <!-- Video Gallery Section Start -->
+    <section class="video-section" style="background-image: url('assets/fixed-bg.jpg');">
+        <div class="video-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 reveal reveal-fade-left">
+                    <div class="video-content">
+                        <span class="video-badge">Car Repair</span>
+                        <h2 class="video-title">
+                            Video
+                            <br> Gallery
+                        </h2>
+                        <p class="video-subtitle">Expert Videos On Vehicle Repairs</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 reveal reveal-fade-right">
+                    <div class="video-play-wrap">
+                        <div class="play-btn-pulse" id="playBtn">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <span class="play-label">Watch Video</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Video Gallery Section End -->
+    <!-- Video Modal End -->
+
+    <!-- Video Modal Start -->
+    <div class="video-modal-overlay" id="videoModal">
+        <div class="modal-box">
+            <button class="modal-close-btn" id="modalClose">&times;</button>
+            <div class="ratio ratio-16x9">
+                <iframe id="videoIframe" src="" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+    <!-- Testimonials Section Start -->
+    <section class="testimonials-section py-5 position-relative overflow-hidden">
+        <!-- Background Gears -->
+        <div class="gear-bg gear-1">
+            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <path
+                    d="M8.932.727c-.243-.97-1.62-.97-1.864 0l-.071.286a.96.96 0 0 1-1.622.434l-.205-.211c-.695-.719-1.888-.03-1.613.931l.08.284a.96.96 0 0 1-1.186 1.187l-.284-.081c-.96-.275-1.65.918-.931 1.613l.211.205a.96.96 0 0 1-.434 1.622l-.286.071c-.97.243-.97 1.62 0 1.864l.286.071a.96.96 0 0 1 .434 1.622l-.211.205c-.719.695-.03 1.888.931 1.613l.284-.08a.96.96 0 0 1 1.187 1.187l-.081.283c-.275.96.918 1.65 1.613.931l.205-.211a.96.96 0 0 1 1.622.434l.071.286c.243.97 1.62.97 1.864 0l.071-.286a.96.96 0 0 1 1.622-.434l.205.211c.695.719 1.888.03 1.613-.931l-.08-.284a.96.96 0 0 1 1.187-1.187l.283.081c.96.275 1.65-.918.931-1.613l-.211-.205a.96.96 0 0 1 .434-1.622l.286-.071c.97-.243.97-1.62 0-1.864l-.286-.071a.96.96 0 0 1-.434-1.622l.211-.205c.719-.695.03-1.888-.931-1.613l-.284.08a.96.96 0 0 1-1.187-1.186l.081-.284c.275-.96-.918-1.65-1.613-.931l-.205.211a.96.96 0 0 1-1.622-.434L8.932.727zM8 12.997a4.998 4.998 0 1 1 0-9.995 4.998 4.998 0 0 1 0 9.996z" />
+            </svg>
+        </div>
+        <div class="gear-bg gear-2">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M17.2994 10.4527L19.2267 10.7677C19.3846 10.7935 19.5003 10.9298 19.5 11.0896V12.883C19.5 13.0412 19.3865 13.1768 19.2303 13.2042L17.3004 13.543C17.1885 13.9298 17.0349 14.3022 16.8415 14.6543L17.9823 16.2382C18.0759 16.3679 18.0612 16.5463 17.9483 16.6595L16.6804 17.9283C16.5682 18.0401 16.3921 18.0561 16.2623 17.9645L14.6627 16.8424C14.3099 17.0387 13.9352 17.1952 13.5442 17.3103L13.2034 19.231C13.176 19.3865 13.0406 19.5 12.8825 19.5H11.0888C10.9294 19.5 10.7934 19.3849 10.7676 19.228L10.4493 17.3168C10.059 17.204 9.6823 17.0485 9.32585 16.8525L7.73767 17.9648C7.60821 18.0558 7.43178 18.0401 7.31992 17.9283L6.05198 16.6595C5.93947 16.5463 5.9248 16.3686 6.01741 16.2391L7.13958 14.6697C6.94163 14.3116 6.78444 13.9337 6.67062 13.5414L4.76905 13.2042C4.61349 13.1765 4.5 13.0412 4.5 12.883V11.0896C4.5 10.9304 4.61544 10.7941 4.77263 10.768L6.67421 10.4514C6.78868 10.0582 6.94586 9.68022 7.14316 9.32315L6.0347 7.73739C5.94371 7.60793 5.95937 7.43185 6.07122 7.32L7.33883 6.0525C7.452 5.94 7.62908 5.925 7.7592 6.01793L9.33433 7.14293C9.68817 6.94924 10.0639 6.795 10.4552 6.6825L10.767 4.77359C10.7927 4.61576 10.929 4.5 11.0888 4.5H12.8825C13.041 4.5 13.1763 4.61413 13.2037 4.77L13.5399 6.68935C13.929 6.8025 14.304 6.95837 14.6591 7.15467L16.2385 6.01957C16.3683 5.92598 16.5464 5.94065 16.6595 6.05348L17.9278 7.32098C18.0397 7.43315 18.0553 7.60957 17.9643 7.73902L16.8392 9.34239C17.0323 9.69424 17.1865 10.066 17.2994 10.4527ZM9.71725 12C9.71725 13.2607 10.7393 14.2826 12.0001 14.2826C13.2608 14.2826 14.2829 13.2607 14.2829 12C14.2829 10.7394 13.2608 9.71742 12.0001 9.71742C10.7393 9.71742 9.71725 10.7394 9.71725 12Z"
+                    stroke="currentColor" />
+            </svg>
+        </div>
+        <div class="gear-bg gear-3 gear-small">
+            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <path
+                    d="M8.932.727c-.243-.97-1.62-.97-1.864 0l-.071.286a.96.96 0 0 1-1.622.434l-.205-.211c-.695-.719-1.888-.03-1.613.931l.08.284a.96.96 0 0 1-1.186 1.187l-.284-.081c-.96-.275-1.65.918-.931 1.613l.211.205a.96.96 0 0 1-.434 1.622l-.286.071c-.97.243-.97 1.62 0 1.864l.286.071a.96.96 0 0 1 .434 1.622l-.211.205c-.719.695-.03 1.888.931 1.613l.284-.08a.96.96 0 0 1 1.187 1.187l-.081.283c-.275.96.918 1.65 1.613.931l.205-.211a.96.96 0 0 1 1.622.434l.071.286c.243.97 1.62.97 1.864 0l.071-.286a.96.96 0 0 1 1.622-.434l.205.211c.695.719 1.888.03 1.613-.931l-.08-.284a.96.96 0 0 1 1.187-1.187l.283.081c.96.275 1.65-.918.931-1.613l-.211-.205a.96.96 0 0 1 .434-1.622l.286-.071c.97-.243.97-1.62 0-1.864l-.286-.071a.96.96 0 0 1-.434-1.622l.211-.205c.719-.695.03-1.888-.931-1.613l-.284.08a.96.96 0 0 1-1.187-1.186l.081-.284c.275-.96-.918-1.65-1.613-.931l-.205.211a.96.96 0 0 1-1.622-.434L8.932.727zM8 12.997a4.998 4.998 0 1 1 0-9.995 4.998 4.998 0 0 1 0 9.996z" />
+            </svg>
+        </div>
+        <div class="gear-bg gear-4">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M17.2994 10.4527L19.2267 10.7677C19.3846 10.7935 19.5003 10.9298 19.5 11.0896V12.883C19.5 13.0412 19.3865 13.1768 19.2303 13.2042L17.3004 13.543C17.1885 13.9298 17.0349 14.3022 16.8415 14.6543L17.9823 16.2382C18.0759 16.3679 18.0612 16.5463 17.9483 16.6595L16.6804 17.9283C16.5682 18.0401 16.3921 18.0561 16.2623 17.9645L14.6627 16.8424C14.3099 17.0387 13.9352 17.1952 13.5442 17.3103L13.2034 19.231C13.176 19.3865 13.0406 19.5 12.8825 19.5H11.0888C10.9294 19.5 10.7934 19.3849 10.7676 19.228L10.4493 17.3168C10.059 17.204 9.6823 17.0485 9.32585 16.8525L7.73767 17.9648C7.60821 18.0558 7.43178 18.0401 7.31992 17.9283L6.05198 16.6595C5.93947 16.5463 5.9248 16.3686 6.01741 16.2391L7.13958 14.6697C6.94163 14.3116 6.78444 13.9337 6.67062 13.5414L4.76905 13.2042C4.61349 13.1765 4.5 13.0412 4.5 12.883V11.0896C4.5 10.9304 4.61544 10.7941 4.77263 10.768L6.67421 10.4514C6.78868 10.0582 6.94586 9.68022 7.14316 9.32315L6.0347 7.73739C5.94371 7.60793 5.95937 7.43185 6.07122 7.32L7.33883 6.0525C7.452 5.94 7.62908 5.925 7.7592 6.01793L9.33433 7.14293C9.68817 6.94924 10.0639 6.795 10.4552 6.6825L10.767 4.77359C10.7927 4.61576 10.929 4.5 11.0888 4.5H12.8825C13.041 4.5 13.1763 4.61413 13.2037 4.77L13.5399 6.68935C13.929 6.8025 14.304 6.95837 14.6591 7.15467L16.2385 6.01957C16.3683 5.92598 16.5464 5.94065 16.6595 6.05348L17.9278 7.32098C18.0397 7.43315 18.0553 7.60957 17.9643 7.73902L16.8392 9.34239C17.0323 9.69424 17.1865 10.066 17.2994 10.4527ZM9.71725 12C9.71725 13.2607 10.7393 14.2826 12.0001 14.2826C13.2608 14.2826 14.2829 13.2607 14.2829 12C14.2829 10.7394 13.2608 9.71742 12.0001 9.71742C10.7393 9.71742 9.71725 10.7394 9.71725 12Z"
+                    stroke="currentColor" />
+            </svg>
+        </div>
+        <div class="gear-bg gear-5 gear-small">
+            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <path
+                    d="M8.932.727c-.243-.97-1.62-.97-1.864 0l-.071.286a.96.96 0 0 1-1.622.434l-.205-.211c-.695-.719-1.888-.03-1.613.931l.08.284a.96.96 0 0 1-1.186 1.187l-.284-.081c-.96-.275-1.65.918-.931 1.613l.211.205a.96.96 0 0 1-.434 1.622l-.286.071c-.97.243-.97 1.62 0 1.864l.286.071a.96.96 0 0 1 .434 1.622l-.211.205c-.719.695-.03 1.888.931 1.613l.284-.08a.96.96 0 0 1 1.187 1.187l-.081.283c-.275.96.918 1.65 1.613.931l.205-.211a.96.96 0 0 1 1.622.434l.071.286c.243.97 1.62.97 1.864 0l.071-.286a.96.96 0 0 1 1.622-.434l.205.211c.695.719 1.888.03 1.613-.931l-.08-.284a.96.96 0 0 1 1.187-1.187l.283.081c.96.275 1.65-.918.931-1.613l-.211-.205a.96.96 0 0 1 .434-1.622l.286-.071c.97-.243.97-1.62 0-1.864l-.286-.071a.96.96 0 0 1-.434-1.622l.211-.205c.719-.695.03-1.888-.931-1.613l-.284.08a.96.96 0 0 1-1.187-1.186l.081-.284c.275-.96-.918-1.65-1.613-.931l-.205.211a.96.96 0 0 1-1.622-.434L8.932.727zM8 12.997a4.998 4.998 0 1 1 0-9.995 4.998 4.998 0 0 1 0 9.996z" />
+            </svg>
+        </div>
+        <div class="gear-bg gear-6">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M17.2994 10.4527L19.2267 10.7677C19.3846 10.7935 19.5003 10.9298 19.5 11.0896V12.883C19.5 13.0412 19.3865 13.1768 19.2303 13.2042L17.3004 13.543C17.1885 13.9298 17.0349 14.3022 16.8415 14.6543L17.9823 16.2382C18.0759 16.3679 18.0612 16.5463 17.9483 16.6595L16.6804 17.9283C16.5682 18.0401 16.3921 18.0561 16.2623 17.9645L14.6627 16.8424C14.3099 17.0387 13.9352 17.1952 13.5442 17.3103L13.2034 19.231C13.176 19.3865 13.0406 19.5 12.8825 19.5H11.0888C10.9294 19.5 10.7934 19.3849 10.7676 19.228L10.4493 17.3168C10.059 17.204 9.6823 17.0485 9.32585 16.8525L7.73767 17.9648C7.60821 18.0558 7.43178 18.0401 7.31992 17.9283L6.05198 16.6595C5.93947 16.5463 5.9248 16.3686 6.01741 16.2391L7.13958 14.6697C6.94163 14.3116 6.78444 13.9337 6.67062 13.5414L4.76905 13.2042C4.61349 13.1765 4.5 13.0412 4.5 12.883V11.0896C4.5 10.9304 4.61544 10.7941 4.77263 10.768L6.67421 10.4514C6.78868 10.0582 6.94586 9.68022 7.14316 9.32315L6.0347 7.73739C5.94371 7.60793 5.95937 7.43185 6.07122 7.32L7.33883 6.0525C7.452 5.94 7.62908 5.925 7.7592 6.01793L9.33433 7.14293C9.68817 6.94924 10.0639 6.795 10.4552 6.6825L10.767 4.77359C10.7927 4.61576 10.929 4.5 11.0888 4.5H12.8825C13.041 4.5 13.1763 4.61413 13.2037 4.77L13.5399 6.68935C13.929 6.8025 14.304 6.95837 14.6591 7.15467L16.2385 6.01957C16.3683 5.92598 16.5464 5.94065 16.6595 6.05348L17.9278 7.32098C18.0397 7.43315 18.0553 7.60957 17.9643 7.73902L16.8392 9.34239C17.0323 9.69424 17.1865 10.066 17.2994 10.4527ZM9.71725 12C9.71725 13.2607 10.7393 14.2826 12.0001 14.2826C13.2608 14.2826 14.2829 13.2607 14.2829 12C14.2829 10.7394 13.2608 9.71742 12.0001 9.71742C10.7393 9.71742 9.71725 10.7394 9.71725 12Z"
+                    stroke="currentColor" />
+            </svg>
+        </div>
+
+        <div class="container relative z-1">
+            <div class="text-center mb-5">
+                <span class="about-subtitle d-block mb-2 text-uppercase fw-bold"
+                    style="color: var(--primary-red);">Testimonials</span>
+                <h2 class="solution-title text-navy">About Our Customers<br>Feedback Says</h2>
+            </div>
+
+            <div class="testimonial-carousel-container overflow-hidden">
+                <div class="testimonial-track">
+                    <!-- Original 4 Cards -->
+                    <div class="testimonial-card-item">
+                        <div class="testimonial-card">
+                            <div class="rating mb-3">
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                            </div>
+                            <div class="user-meta d-flex align-items-center justify-content-between mb-3">
+                                <div class="user-info d-flex align-items-center">
+                                    <div class="user-img me-3">
+                                        <img src="assets/avatar-1.jpg" alt="User">
+                                    </div>
+                                    <div class="user-details text-start">
+                                        <h4 class="mb-0">Sk Samiul</h4>
+                                        <p class="mb-0">Engineer</p>
+                                    </div>
+                                </div>
+                                <div class="quote-icon">
+                                    <i class="fa-solid fa-quote-right"></i>
+                                </div>
+                            </div>
+                            <p class="testimonial-text text-start">
+                                Fantastic detailing service! My car looks brand new again. Highly recommended.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-item">
+                        <div class="testimonial-card">
+                            <div class="rating mb-3">
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                            </div>
+                            <div class="user-meta d-flex align-items-center justify-content-between mb-3">
+                                <div class="user-info d-flex align-items-center">
+                                    <div class="user-img me-3">
+                                        <img src="assets/avatar-2.jpg" alt="User">
+                                    </div>
+                                    <div class="user-details text-start">
+                                        <h4 class="mb-0">Bts Ashik</h4>
+                                        <p class="mb-0">Engineer</p>
+                                    </div>
+                                </div>
+                                <div class="quote-icon">
+                                    <i class="fa-solid fa-quote-right"></i>
+                                </div>
+                            </div>
+                            <p class="testimonial-text text-start">
+                                Quick, professional, and great attention to detail. Best auto detailing I’ve used.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-item">
+                        <div class="testimonial-card">
+                            <div class="rating mb-3">
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                            </div>
+                            <div class="user-meta d-flex align-items-center justify-content-between mb-3">
+                                <div class="user-info d-flex align-items-center">
+                                    <div class="user-img me-3">
+                                        <img src="assets/avatar-3.avif" alt="User">
+                                    </div>
+                                    <div class="user-details text-start">
+                                        <h4 class="mb-0">Shadin Biswas</h4>
+                                        <p class="mb-0">Engineer</p>
+                                    </div>
+                                </div>
+                                <div class="quote-icon">
+                                    <i class="fa-solid fa-quote-right"></i>
+                                </div>
+                            </div>
+                            <p class="testimonial-text text-start">
+                                Incredible shine and spotless interior. The team did an amazing job.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-item">
+                        <div class="testimonial-card">
+                            <div class="rating mb-3">
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                            </div>
+                            <div class="user-meta d-flex align-items-center justify-content-between mb-3">
+                                <div class="user-info d-flex align-items-center">
+                                    <div class="user-img me-3">
+                                        <img src="assets/avatar-1.jpg" alt="User">
+                                    </div>
+                                    <div class="user-details text-start">
+                                        <h4 class="mb-0">Sk Samiul</h4>
+                                        <p class="mb-0">Engineer</p>
+                                    </div>
+                                </div>
+                                <div class="quote-icon">
+                                    <i class="fa-solid fa-quote-right"></i>
+                                </div>
+                            </div>
+                            <p class="testimonial-text text-start">
+                                Super convenient booking and excellent results. My car has never looked better.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Clones (Exact copy for seamless loop) -->
+                    <div class="testimonial-card-item">
+                        <div class="testimonial-card">
+                            <div class="rating mb-3">
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                            </div>
+                            <div class="user-meta d-flex align-items-center justify-content-between mb-3">
+                                <div class="user-info d-flex align-items-center">
+                                    <div class="user-img me-3">
+                                        <img src="assets/avatar-1.jpg" alt="User">
+                                    </div>
+                                    <div class="user-details text-start">
+                                        <h4 class="mb-0">Sk Samiul</h4>
+                                        <p class="mb-0">Engineer</p>
+                                    </div>
+                                </div>
+                                <div class="quote-icon">
+                                    <i class="fa-solid fa-quote-right"></i>
+                                </div>
+                            </div>
+                            <p class="testimonial-text text-start">
+                                Fantastic detailing service! My car looks brand new again. Highly recommended.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-item">
+                        <div class="testimonial-card">
+                            <div class="rating mb-3">
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                            </div>
+                            <div class="user-meta d-flex align-items-center justify-content-between mb-3">
+                                <div class="user-info d-flex align-items-center">
+                                    <div class="user-img me-3">
+                                        <img src="assets/avatar-2.jpg" alt="User">
+                                    </div>
+                                    <div class="user-details text-start">
+                                        <h4 class="mb-0">Bts Ashik</h4>
+                                        <p class="mb-0">Engineer</p>
+                                    </div>
+                                </div>
+                                <div class="quote-icon">
+                                    <i class="fa-solid fa-quote-right"></i>
+                                </div>
+                            </div>
+                            <p class="testimonial-text text-start">
+                                Quick, professional, and great attention to detail. Best auto detailing I’ve used.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-item">
+                        <div class="testimonial-card">
+                            <div class="rating mb-3">
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                            </div>
+                            <div class="user-meta d-flex align-items-center justify-content-between mb-3">
+                                <div class="user-info d-flex align-items-center">
+                                    <div class="user-img me-3">
+                                        <img src="assets/avatar-3.avif" alt="User">
+                                    </div>
+                                    <div class="user-details text-start">
+                                        <h4 class="mb-0">Shadin Biswas</h4>
+                                        <p class="mb-0">Engineer</p>
+                                    </div>
+                                </div>
+                                <div class="quote-icon">
+                                    <i class="fa-solid fa-quote-right"></i>
+                                </div>
+                            </div>
+                            <p class="testimonial-text text-start">
+                                Incredible shine and spotless interior. The team did an amazing job.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-item">
+                        <div class="testimonial-card">
+                            <div class="rating mb-3">
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                            </div>
+                            <div class="user-meta d-flex align-items-center justify-content-between mb-3">
+                                <div class="user-info d-flex align-items-center">
+                                    <div class="user-img me-3">
+                                        <img src="assets/avatar-1.jpg" alt="User">
+                                    </div>
+                                    <div class="user-details text-start">
+                                        <h4 class="mb-0">Sk Samiul</h4>
+                                        <p class="mb-0">Engineer</p>
+                                    </div>
+                                </div>
+                                <div class="quote-icon">
+                                    <i class="fa-solid fa-quote-right"></i>
+                                </div>
+                            </div>
+                            <p class="testimonial-text text-start">
+                                Super convenient booking and excellent results. My car has never looked better.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section End -->
+
+    <!-- Why Choose Us Section Start -->
+    <section class="choose-us-section position-relative overflow-hidden">
+        <!-- Background Decor Gears (Full Width Edge to Edge) -->
+        <div class="choose-decor-right">
+            <div class="gear-bg gear-mini gear-pos-1">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <path
+                        d="M8.932.727c-.243-.97-1.62-.97-1.864 0l-.071.286a.96.96 0 0 1-1.622.434l-.205-.211c-.695-.719-1.888-.03-1.613.931l.08.284a.96.96 0 0 1-1.186 1.187l-.284-.081c-.96-.275-1.65.918-.931 1.613l.211.205a.96.96 0 0 1-.434 1.622l-.286.071c-.97.243-.97 1.62 0 1.864l.286.071a.96.96 0 0 1 .434 1.622l-.211.205c-.719.695-.03 1.888.931 1.613l.284-.08a.96.96 0 0 1 1.187 1.187l-.081.283c-.275.96.918 1.65 1.613.931l.205-.211a.96.96 0 0 1 1.622.434l.071.286c.243.97 1.62.97 1.864 0l.071-.286a.96.96 0 0 1 1.622-.434l.205.211c.695.719 1.888.03 1.613-.931l-.08-.284a.96.96 0 0 1 1.187-1.187l.283.081c.96.275 1.65-.918.931-1.613l-.211-.205a.96.96 0 0 1 .434-1.622l-.286-.071c.97-.243.97-1.62 0-1.864l-.286-.071a.96.96 0 0 1-.434-1.622l.211-.205c.719-.695.03-1.888-.931-1.613l-.284.08a.96.96 0 0 1-1.187-1.186l.081-.284c.275-.96-.918-1.65-1.613-.931l-.205.211a.96.96 0 0 1-1.622-.434L8.932.727zM8 12.997a4.998 4.998 0 1 1 0-9.995 4.998 4.998 0 0 1 0 9.996z" />
+                </svg>
+            </div>
+            <div class="gear-bg gear-large gear-pos-5">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M17.2994 10.4527L19.2267 10.7677C19.3846 10.7935 19.5003 10.9298 19.5 11.0896V12.883C19.5 13.0412 19.3865 13.1768 19.2303 13.2042L17.3004 13.543C17.1885 13.9298 17.0349 14.3022 16.8415 14.6543L17.9823 16.2382C18.0759 16.3679 18.0612 16.5463 17.9483 16.6595L16.6804 17.9283C16.5682 18.0401 16.3921 18.0561 16.2623 17.9645L14.6627 16.8424C14.3099 17.0387 13.9352 17.1952 13.5442 17.3103L13.2034 19.231C13.176 19.3865 13.0406 19.5 12.8825 19.5H11.0888C10.9294 19.5 10.7934 19.3849 10.7676 19.228L10.4493 17.3168C10.059 17.204 9.6823 17.0485 9.32585 16.8525L7.73767 17.9648C7.60821 18.0558 7.43178 18.0401 7.31992 17.9283L6.05198 16.6595C5.93947 16.5463 5.9248 16.3686 6.01741 16.2391L7.13958 14.6697C6.94163 14.3116 6.78444 13.9337 6.67062 13.5414L4.76905 13.2042C4.61349 13.1765 4.5 13.0412 4.5 12.883V11.0896C4.5 10.9304 4.61544 10.7941 4.77263 10.768L6.67421 10.4514C6.78868 10.0582 6.94586 9.68022 7.14316 9.32315L6.0347 7.73739C5.94371 7.60793 5.95937 7.43185 6.07122 7.32L7.33883 6.0525C7.452 5.94 7.62908 5.925 7.7592 6.01793L9.33433 7.14293C9.68817 6.94924 10.0639 6.795 10.4552 6.6825L10.767 4.77359C10.7927 4.61576 10.929 4.5 11.0888 4.5H12.8825C13.041 4.5 13.1763 4.61413 13.2037 4.77L13.5399 6.68935C13.929 6.8025 14.304 6.95837 14.6591 7.15467L16.2385 6.01957C16.3683 5.92598 16.5464 5.94065 16.6595 6.05348L17.9278 7.32098C18.0397 7.43315 18.0553 7.60957 17.9643 7.73902L16.8392 9.34239C17.0323 9.69424 17.1865 10.066 17.2994 10.4527ZM9.71725 12C9.71725 13.2607 10.7393 14.2826 12.0001 14.2826C13.2608 14.2826 14.2829 13.2607 14.2829 12C14.2829 10.7394 13.2608 9.71742 12.0001 9.71742C10.7393 9.71742 9.71725 10.7394 9.71725 12Z"
+                        stroke="currentColor" />
+                </svg>
+            </div>
+            <div class="gear-bg gear-medium gear-pos-2">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M17.2994 10.4527L19.2267 10.7677C19.3846 10.7935 19.5003 10.9298 19.5 11.0896V12.883C19.5 13.0412 19.3865 13.1768 19.2303 13.2042L17.3004 13.543C17.1885 13.9298 17.0349 14.3022 16.8415 14.6543L17.9823 16.2382C18.0759 16.3679 18.0612 16.5463 17.9483 16.6595L16.6804 17.9283C16.5682 18.0401 16.3921 18.0561 16.2623 17.9645L14.6627 16.8424C14.3099 17.0387 13.9352 17.1952 13.5442 17.3103L13.2034 19.231C13.176 19.3865 13.0406 19.5 12.8825 19.5H11.0888C10.9294 19.5 10.7934 19.3849 10.7676 19.228L10.4493 17.3168C10.059 17.204 9.6823 17.0485 9.32585 16.8525L7.73767 17.9648C7.60821 18.0558 7.43178 18.0401 7.31992 17.9283L6.05198 16.6595C5.93947 16.5463 5.9248 16.3686 6.01741 16.2391L7.13958 14.6697C6.94163 14.3116 6.78444 13.9337 6.67062 13.5414L4.76905 13.2042C4.61349 13.1765 4.5 13.0412 4.5 12.883V11.0896C4.5 10.9304 4.61544 10.7941 4.77263 10.768L6.67421 10.4514C6.78868 10.0582 6.94586 9.68022 7.14316 9.32315L6.0347 7.73739C5.94371 7.60793 5.95937 7.43185 6.07122 7.32L7.33883 6.0525C7.452 5.94 7.62908 5.925 7.7592 6.01793L9.33433 7.14293C9.68817 6.94924 10.0639 6.795 10.4552 6.6825L10.767 4.77359C10.7927 4.61576 10.929 4.5 11.0888 4.5H12.8825C13.041 4.5 13.1763 4.61413 13.2037 4.77L13.5399 6.68935C13.929 6.8025 14.304 6.95837 14.6591 7.15467L16.2385 6.01957C16.3683 5.92598 16.5464 5.94065 16.6595 6.05348L17.9278 7.32098C18.0397 7.43315 18.0553 7.60957 17.9643 7.73902L16.8392 9.34239C17.0323 9.69424 17.1865 10.066 17.2994 10.4527ZM9.71725 12C9.71725 13.2607 10.7393 14.2826 12.0001 14.2826C13.2608 14.2826 14.2829 13.2607 14.2829 12C14.2829 10.7394 13.2608 9.71742 12.0001 9.71742C10.7393 9.71742 9.71725 10.7394 9.71725 12Z"
+                        stroke="currentColor" />
+                </svg>
+            </div>
+            <div class="gear-bg gear-small gear-pos-6">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <path
+                        d="M8.932.727c-.243-.97-1.62-.97-1.864 0l-.071.286a.96.96 0 0 1-1.622.434l-.205-.211c-.695-.719-1.888-.03-1.613.931l.08.284a.96.96 0 0 1-1.186 1.187l-.284-.081c-.96-.275-1.65.918-.931 1.613l.211.205a.96.96 0 0 1-.434 1.622l-.286.071c-.97.243-.97 1.62 0 1.864l.286.071a.96.96 0 0 1 .434 1.622l-.211.205c-.719.695-.03 1.888.931 1.613l.284-.08a.96.96 0 0 1 1.187 1.187l-.081.283c-.275.96.918 1.65 1.613.931l.205-.211a.96.96 0 0 1 1.622.434l.071.286c.243.97 1.62.97 1.864 0l.071-.286a.96.96 0 0 1 1.622-.434l.205.211c.695.719 1.888.03 1.613-.931l-.08-.284a.96.96 0 0 1 1.187-1.187l.283.081c.96.275 1.65-.918.931-1.613l-.211-.205a.96.96 0 0 1 .434-1.622l-.286-.071c.97-.243.97-1.62 0-1.864l-.286-.071a.96.96 0 0 1-.434-1.622l.211-.205c.719-.695.03-1.888-.931-1.613l-.284.08a.96.96 0 0 1-1.187-1.186l.081-.284c.275-.96-.918-1.65-1.613-.931l-.205.211a.96.96 0 0 1-1.622-.434L8.932.727zM8 12.997a4.998 4.998 0 1 1 0-9.995 4.998 4.998 0 0 1 0 9.996z" />
+                </svg>
+            </div>
+            <div class="gear-bg gear-large gear-pos-3">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M17.2994 10.4527L19.2267 10.7677C19.3846 10.7935 19.5003 10.9298 19.5 11.0896V12.883C19.5 13.0412 19.3865 13.1768 19.2303 13.2042L17.3004 13.543C17.1885 13.9298 17.0349 14.3022 16.8415 14.6543L17.9823 16.2382C18.0759 16.3679 18.0612 16.5463 17.9483 16.6595L16.6804 17.9283C16.5682 18.0401 16.3921 18.0561 16.2623 17.9645L14.6627 16.8424C14.3099 17.0387 13.9352 17.1952 13.5442 17.3103L13.2034 19.231C13.176 19.3865 13.0406 19.5 12.8825 19.5H11.0888C10.9294 19.5 10.7934 19.3849 10.7676 19.228L10.4493 17.3168C10.059 17.204 9.6823 17.0485 9.32585 16.8525L7.73767 17.9648C7.60821 18.0558 7.43178 18.0401 7.31992 17.9283L6.05198 16.6595C5.93947 16.5463 5.9248 16.3686 6.01741 16.2391L7.13958 14.6697C6.94163 14.3116 6.78444 13.9337 6.67062 13.5414L4.76905 13.2042C4.61349 13.1765 4.5 13.0412 4.5 12.883V11.0896C4.5 10.9304 4.61544 10.7941 4.77263 10.768L6.67421 10.4514C6.78868 10.0582 6.94586 9.68022 7.14316 9.32315L6.0347 7.73739C5.94371 7.60793 5.95937 7.43185 6.07122 7.32L7.33883 6.0525C7.452 5.94 7.62908 5.925 7.7592 6.01793L9.33433 7.14293C9.68817 6.94924 10.0639 6.795 10.4552 6.6825L10.767 4.77359C10.7927 4.61576 10.929 4.5 11.0888 4.5H12.8825C13.041 4.5 13.1763 4.61413 13.2037 4.77L13.5399 6.68935C13.929 6.8025 14.304 6.95837 14.6591 7.15467L16.2385 6.01957C16.3683 5.92598 16.5464 5.94065 16.6595 6.05348L17.9278 7.32098C18.0397 7.43315 18.0553 7.60957 17.9643 7.73902L16.8392 9.34239C17.0323 9.69424 17.1865 10.066 17.2994 10.4527ZM9.71725 12C9.71725 13.2607 10.7393 14.2826 12.0001 14.2826C13.2608 14.2826 14.2829 13.2607 14.2829 12C14.2829 10.7394 13.2608 9.71742 12.0001 9.71742C10.7393 9.71742 9.71725 10.7394 9.71725 12Z"
+                        stroke="currentColor" />
+                </svg>
+            </div>
+            <div class="gear-bg gear-small gear-pos-4">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <path
+                        d="M8.932.727c-.243-.97-1.62-.97-1.864 0l-.071.286a.96.96 0 0 1-1.622.434l-.205-.211c-.695-.719-1.888-.03-1.613.931l.08.284a.96.96 0 0 1-1.186 1.187l-.284-.081c-.96-.275-1.65.918-.931 1.613l.211.205a.96.96 0 0 1-.434 1.622l-.286.071c-.97.243-.97 1.62 0 1.864l.286.071a.96.96 0 0 1 .434 1.622l-.211.205c-.719.695-.03 1.888.931 1.613l.284-.08a.96.96 0 0 1 1.187 1.187l-.081.283c-.275.96.918 1.65 1.613.931l.205-.211a.96.96 0 0 1 1.622.434l.071.286c.243.97 1.62.97 1.864 0l.071-.286a.96.96 0 0 1 1.622-.434l.205.211c.695.719 1.888.03 1.613-.931l-.08-.284a.96.96 0 0 1 1.187-1.187l.283.081c.96.275 1.65-.918.931-1.613l-.211-.205a.96.96 0 0 1 .434-1.622l-.286-.071c.97-.243.97-1.62 0-1.864l-.286-.071a.96.96 0 0 1-.434-1.622l.211-.205c.719-.695.03-1.888-.931-1.613l-.284.08a.96.96 0 0 1-1.187-1.186l.081-.284c.275-.96-.918-1.65-1.613-.931l-.205.211a.96.96 0 0 1-1.622-.434L8.932.727zM8 12.997a4.998 4.998 0 1 1 0-9.995 4.998 4.998 0 0 1 0 9.996z" />
+                </svg>
+            </div>
+        </div>
+        <!-- Hand Tools Image (Direct child of section for full width range) -->
+        <img src="assets/stuff.png" alt="Tools" class="choose-stuff-img d-none d-lg-block">
+
+        <div class="container mt-5">
+            <div class="row align-items-end">
+                <div class="col-lg-6 col-md-12 text-white">
+                    <div class="choose-content-wrap pb-5 pe-lg-5">
+                        <span class="about-subtitle d-block mb-3 text-uppercase fw-bold">Why Choose Us</span>
+                        <h2 class="display-4 fw-bold mb-4">The Smarter Choice For Car Care</h2>
+                        <p class="text-light-gray mb-5">
+                            We provide expert car care solutions using modern tools and skilled technicians. From
+                            detailing to maintenance, we ensure your vehicle stays clean, safe, and road-ready.
+                        </p>
+
+                        <div class="choose-features d-flex flex-wrap align-items-center gap-4 mb-5">
+                            <div class="choose-feat-item d-flex align-items-center">
+                                <div class="feat-icon-bg bg-white shadow rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 55px; height: 55px;">
+                                    <i class="fa-solid fa-car text-red fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0 fw-bold">Innovative Car <br> Solutions</h5>
+                                </div>
+                            </div>
+                            <div class="choose-feat-divider d-none d-sm-block"
+                                style="width: 2px; height: 40px; background: var(--primary-red);"></div>
+                            <div class="choose-feat-text">
+                                <p class="mb-0 text-light-gray fs-small">At Brake Experts Care, your safety <br> comes
+                                    first
+                                    Our skilled</p>
+                            </div>
+                        </div>
+
+                        <div class="choose-author d-flex align-items-center">
+                            <a href="#" class="btn btn-red-pill me-4 btn-effect-hover-jelly">
+                                <span>Read More</span>
+                                <div class="icon-circle"><i class="fa-solid fa-angles-right"></i></div>
+                            </a>
+                            <div class="author-info d-flex align-items-center">
+                                <img src="assets/user3.jpg" alt="Author"
+                                    class="rounded-circle border border-2 border-white me-3"
+                                    style="width: 50px; height: 50px; object-fit: cover;">
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Robert Wilson</h6>
+                                    <p class="mb-0 fs-small text-light-gray">Auto mobile enginners</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 position-relative d-flex align-items-end justify-content-center">
+                    <div class="choose-image-container position-relative mb-0">
+                        <img src="assets/old-man.png" alt="Car Specialist" class="img-fluid choose-man-img">
+                        <!-- Floating Support Card -->
+                        <div class="floating-support-card bg-white p-4 rounded-3 shadow text-start">
+                            <div class="d-flex align-items-center">
+                                <div class="support-icon me-3">
+                                    <div class="feat-icon-bg bg-red shadow rounded-circle d-flex align-items-center justify-content-center"
+                                        style="width: 50px; height: 50px;">
+                                        <i class="fa-solid fa-headset text-white fs-4"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0 text-navy fw-bold">24/7 Hour Support</h5>
+                                    <p class="mb-0 text-gray fs-small">Offering premium service</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hand Tools Image (Stuff) -->
+                    <!-- <img src="assets/stuff.png" alt="Tools" class="choose-stuff-img d-none d-lg-block"> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Red Marquee Bar -->
+        <div class="red-marquee-container bg-red py-3 text-white overflow-hidden">
+            <div class="marquee-track">
+                <div class="marquee-item"><i class="fa-solid fa-car-side me-2"></i> Trusted Repairs</div>
+                <div class="marquee-item"><i class="fa-solid fa-car me-2"></i> Full Car Analysis</div>
+                <div class="marquee-item"><i class="fa-solid fa-car-side me-2"></i> Engine Service</div>
+                <div class="marquee-item"><i class="fa-solid fa-car-side me-2"></i> Auto Glow</div>
+                <div class="marquee-item"><i class="fa-solid fa-car me-2"></i> Tire Care</div>
+                <!-- Duplicate for seamless scroll -->
+                <div class="marquee-item"><i class="fa-solid fa-car-side me-2"></i> Trusted Repairs</div>
+                <div class="marquee-item"><i class="fa-solid fa-car me-2"></i> Full Car Analysis</div>
+                <div class="marquee-item"><i class="fa-solid fa-car-side me-2"></i> Engine Service</div>
+                <div class="marquee-item"><i class="fa-solid fa-car-side me-2"></i> Auto Glow</div>
+                <div class="marquee-item"><i class="fa-solid fa-car me-2"></i> Tire Care</div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Us Section End -->
+
+    <!-- FAQ Section Start -->
+    <section class="faq-section py-5 my-5">
+        <div class="container py-lg-5">
+            <div class="row align-items-center">
+                <!-- Left Side: Image Content -->
+                <div class="col-lg-6 col-md-12 mb-5 mb-lg-0">
+                    <div class="faq-image-wrapper position-relative">
+                        <span class="about-subtitle d-block mb-3 text-uppercase fw-bold text-red">Service FAQ</span>
+                        <h2 class="display-5 fw-bold text-navy mb-4">Common Car Repair Asked Questions !</h2>
+                        <p class="text-gray mb-5">
+                            At our auto repair shop, we understand that car troubles can be stressful. That’s why we’ve
+                            put together answers to some of the most frequently asked questions about our repair
+                            services. From routine maintenance to major repairs, we’re here to help you get back on the
+                            road safely and quickly.
+                        </p>
+
+                        <div class="faq-main-img-box position-relative overflow-hidden rounded-4">
+                            <img src="assets/faq-left.jpg" alt="Car Repairing" class="img-fluid w-100">
+                            <!-- Floating Contact Card -->
+                            <div
+                                class="faq-info-card bg-white d-none d-md-flex align-items-center justify-content-center">
+                                <div
+                                    class="faq-icon-circle bg-red text-white rounded-circle d-flex align-items-center justify-content-center me-3 shadow-red">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </div>
+                                <div class="text-start">
+                                    <h5 class="mb-0 fw-bold text-navy">Call Any Time</h5>
+                                    <p class="mb-0 text-muted fw-semibold faq-phone-num">(+123) 666 79 88</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Premium Accordions -->
+                <div class="col-lg-6 col-md-12 ps-lg-5">
+                    <div class="accordion premium-accordion" id="faqAccordion">
+                        <!-- Accordion Item 1 -->
+                        <div class="accordion-item shadow-sm mb-4 border-0 rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button rounded-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true">
+                                    <span class="idx me-3">01.</span> Quick Answers About Repair Services
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-gray">
+                                    Our car repair services cover everything from diagnostics to engine rebuilds. We use
+                                    state-of-the-art equipment to ensure your vehicle is treated with the highest
+                                    precision and care possible.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 2 -->
+                        <div class="accordion-item shadow-sm mb-4 border-0 rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed rounded-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
+                                    <span class="idx me-3">02.</span> What Types Of Repair Do You Offer?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-gray">
+                                    We offer a wide range of services including brake repair, suspension work,
+                                    transmission checks, oil changes, and full engine diagnostics using advanced digital
+                                    tools.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 3 -->
+                        <div class="accordion-item shadow-sm mb-4 border-0 rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed rounded-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                                    <span class="idx me-3">03.</span> Do You Offer Warranty On Repair?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-gray">
+                                    Yes, all our repairs come with a standard limited warranty. We stand by the quality
+                                    of our work and the parts we use to give you ultimate peace of mind.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 4 -->
+                        <div class="accordion-item shadow-sm mb-4 border-0 rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed rounded-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false">
+                                    <span class="idx me-3">04.</span> How Long Does The Repair Process Take?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-gray">
+                                    Most maintenance tasks take 1-3 hours. Complex repairs depend on the availability of
+                                    parts and the extent of damage, which we will communicate clearly after inspection.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 5 -->
+                        <div class="accordion-item shadow-sm border-0 rounded-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed rounded-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false">
+                                    <span class="idx me-3">05.</span> Can I Book An Appointment Online?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-gray">
+                                    Absolutely! You can use our integrated booking system on our homepage to select your
+                                    service, preferred time, and date in just a few clicks.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Section End -->
+
+    <!-- Team Contact Section Start -->
+    <section class="team-contact-section pb-5 mb-5">
+        <div class="team-contact-bg-wrap position-relative">
+            <div class="team-contact-overlay"></div>
+            <div class="container position-relative z-3 text-center text-white py-5 pt-lg-5 pb-lg-5">
+                <div class="py-5">
+                    <span class="about-subtitle d-block mb-3 text-uppercase fw-bold text-red">Contact Address</span>
+                    <h2 class="display-4 fw-bold mb-5">Connect With Our Team</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container team-cards-container px-0 px-lg-3">
+            <div class="team-contact-carousel-wrapper position-relative">
+                <div class="team-contact-carousel" id="teamContactCarousel">
+                    <div class="team-contact-track">
+                        <!-- Card 1 -->
+                        <div class="team-contact-item">
+                            <div class="contact-card shadow-sm border rounded-4 bg-white position-relative">
+                                <div class="card-tag-wrapper">
+                                    <span
+                                        class="card-tag px-4 py-2 bg-red text-white fw-bold rounded-pill shadow-sm">Washington</span>
+                                </div>
+                                <div class="card-body p-4 pt-5 mt-3">
+                                    <p class="mb-2 text-navy"><strong class="text-dark">Phone:</strong> <a
+                                            href="tel:+12345677345" class="text-decoration-none text-muted">+123 4567
+                                            7345</a></p>
+                                    <p class="mb-2 text-navy"><strong class="text-dark">Email:</strong> <a
+                                            href="mailto:Domain@Example.Com"
+                                            class="text-decoration-none text-muted">Domain@Example.Com</a></p>
+                                    <div class="mt-4">
+                                        <h6 class="fw-bold text-navy mb-2">Workshop Address:</h6>
+                                        <p class="text-muted mb-0 lh-base">17110 116th Ave SE Unit A<br>Renton, WA
+                                            98058-5055</p>
+                                    </div>
+                                    <div class="mt-4">
+                                        <h6 class="fw-bold text-navy mb-2">Opening Hours:</h6>
+                                        <p class="text-muted mb-0 lh-base">Mon-Sat: 9 AM - 7 PM (Sun: Closed)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="team-contact-item">
+                            <div class="contact-card shadow-sm border rounded-4 bg-white position-relative">
+                                <div class="card-tag-wrapper">
+                                    <span
+                                        class="card-tag px-4 py-2 bg-red text-white fw-bold rounded-pill shadow-sm">Los
+                                        Angeles</span>
+                                </div>
+                                <div class="card-body p-4 pt-5 mt-3">
+                                    <p class="mb-2 text-navy"><strong class="text-dark">Phone:</strong> <a
+                                            href="tel:+12345677345" class="text-decoration-none text-muted">+123 4567
+                                            7345</a></p>
+                                    <p class="mb-2 text-navy"><strong class="text-dark">Email:</strong> <a
+                                            href="mailto:Domain@Example.Com"
+                                            class="text-decoration-none text-muted">Domain@Example.Com</a></p>
+                                    <div class="mt-4">
+                                        <h6 class="fw-bold text-navy mb-2">Workshop Address:</h6>
+                                        <p class="text-muted mb-0 lh-base">17110 116th Ave SE Unit A<br>Renton, WA
+                                            98058-5055</p>
+                                    </div>
+                                    <div class="mt-4">
+                                        <h6 class="fw-bold text-navy mb-2">Opening Hours:</h6>
+                                        <p class="text-muted mb-0 lh-base">Mon-Sat: 9 AM - 7 PM (Sun: Closed)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="team-contact-item">
+                            <div class="contact-card shadow-sm border rounded-4 bg-white position-relative">
+                                <div class="card-tag-wrapper">
+                                    <span
+                                        class="card-tag px-4 py-2 bg-red text-white fw-bold rounded-pill shadow-sm">North
+                                        Dakota</span>
+                                </div>
+                                <div class="card-body p-4 pt-5 mt-3">
+                                    <p class="mb-2 text-navy"><strong class="text-dark">Phone:</strong> <a
+                                            href="tel:+12345677345" class="text-decoration-none text-muted">+123 4567
+                                            7345</a></p>
+                                    <p class="mb-2 text-navy"><strong class="text-dark">Email:</strong> <a
+                                            href="mailto:Domain@Example.Com"
+                                            class="text-decoration-none text-muted">Domain@Example.Com</a></p>
+                                    <div class="mt-4">
+                                        <h6 class="fw-bold text-navy mb-2">Workshop Address:</h6>
+                                        <p class="text-muted mb-0 lh-base">17110 116th Ave SE Unit A<br>Renton, WA
+                                            98058-5055</p>
+                                    </div>
+                                    <div class="mt-4">
+                                        <h6 class="fw-bold text-navy mb-2">Opening Hours:</h6>
+                                        <p class="text-muted mb-0 lh-base">Mon-Sat: 9 AM - 7 PM (Sun: Closed)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Nav Arrows -->
+                <button class="team-nav-btn prev d-lg-none"
+                    onclick="document.getElementById('teamContactCarousel').scrollBy({left: -300, behavior: 'smooth'})">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="team-nav-btn next d-lg-none"
+                    onclick="document.getElementById('teamContactCarousel').scrollBy({left: 300, behavior: 'smooth'})">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR PROJECT Section Start -->
+    <section class="gallery-section py-5">
+        <div class="container py-lg-4">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-8">
+                    <span class="text-uppercase fw-bold text-red small ms-1">OUR PROJECT</span>
+                    <h2 class="display-5 fw-bold text-navy mt-2">Gallery Of Trusted Repairs<br>Real Cars, Real Results
+                    </h2>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                    <a href="#" class="btn-view-projects">
+                        View All Projects
+                        <span class="arrow-circle"><i class="fa-solid fa-angles-right"></i></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Row 1 -->
+                <div class="gallery-item big">
+                    <img src="assets/first-big.jpg" alt="Gallery Project">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <div class="project-info">
+                                <h4 class="fw-bold text-white mb-1">Body & Cosmetic Repairs</h4>
+                                <p class="text-white-50 small mb-0">Prime auto service</p>
+                            </div>
+                            <div class="project-btn">
+                                <i class="fa-solid fa-angles-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item small-top">
+                    <img src="assets/first-small.jpg" alt="Gallery Project">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <div class="project-info">
+                                <h4 class="fw-bold text-white mb-1">Interior Detailing</h4>
+                                <p class="text-white-50 small mb-0">Prime auto service</p>
+                            </div>
+                            <div class="project-btn">
+                                <i class="fa-solid fa-angles-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="gallery-item below">
+                    <img src="assets/below-small.jpg" alt="Gallery Project">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <div class="project-info">
+                                <h4 class="fw-bold text-white mb-1">Exterior Detailing</h4>
+                                <p class="text-white-50 small mb-0">Prime auto service</p>
+                            </div>
+                            <div class="project-btn">
+                                <i class="fa-solid fa-angles-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item below">
+                    <img src="assets/below-second-small.jpg" alt="Gallery Project">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <div class="project-info">
+                                <h4 class="fw-bold text-white mb-1">Parts Replace</h4>
+                                <p class="text-white-50 small mb-0">Prime auto service</p>
+                            </div>
+                            <div class="project-btn">
+                                <i class="fa-solid fa-angles-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item below">
+                    <img src="assets/below-third-small.jpg" alt="Gallery Project">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <div class="project-info">
+                                <h4 class="fw-bold text-white mb-1">Break Check & Repair</h4>
+                                <p class="text-white-50 small mb-0">Prime auto service</p>
+                            </div>
+                            <div class="project-btn">
+                                <i class="fa-solid fa-angles-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- OUR PROJECT Section End -->
+
+    <!-- CONTACT FORM Section Start -->
+    <section class="contact-form-section position-relative py-5">
+        <div class="contact-form-overlay"></div>
+        <div class="container position-relative z-2 py-5">
+            <div class="text-center mb-5">
+                <span class="text-red fw-bold text-uppercase small letter-spacing-2">Contact Us</span>
+                <h2 class="display-4 fw-bold text-white mt-2">Let's Fix Your Car</h2>
+            </div>
+
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-5">
+                    <!-- Mobile Toggle Button -->
+                    <button class="btn-info-toggle d-lg-none w-100 mb-4" onclick="toggleContactInfo()">
+                        <span>Have Question?</span>
+                        <i class="fa-solid fa-chevron-down ms-2"></i>
+                    </button>
+
+                    <div class="contact-info-wrap" id="mobileContactInfo">
+                        <!-- Card 1 -->
+                        <div class="contact-info-card glass-morphism mb-3 p-3 d-flex align-items-center">
+                            <div class="info-icon-circle bg-white text-navy me-3">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div class="info-details">
+                                <span class="d-block text-white-50 xs-text mb-0">Have Question?</span>
+                                <h5 class="text-white fw-bold mb-0">Free +00 (92110) 85413</h5>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="contact-info-card glass-morphism mb-3 p-3 d-flex align-items-center">
+                            <div class="info-icon-circle bg-white text-navy me-3">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                            </div>
+                            <div class="info-details">
+                                <span class="d-block text-white-50 xs-text mb-0">Write Email</span>
+                                <h5 class="text-white fw-bold mb-0">Domain@Example.Com</h5>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="contact-info-card glass-morphism p-3 d-flex align-items-center mb-lg-0 mb-4">
+                            <div class="info-icon-circle bg-white text-navy me-3">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="info-details">
+                                <span class="d-block text-white-50 xs-text mb-0">Our Location</span>
+                                <h5 class="text-white fw-bold mb-0">88 Brooklyn Golden USA</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="contact-form-container glass-morphism p-4 p-lg-5">
+                        <form id="contactForm">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="form-group-custom">
+                                        <input type="text" class="form-control-custom" placeholder="Your Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group-custom">
+                                        <input type="email" class="form-control-custom" placeholder="Enter Email"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group-custom">
+                                        <input type="tel" class="form-control-custom" placeholder="Phone" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group-custom position-relative">
+                                        <select class="form-select-custom" required>
+                                            <option value="" disabled selected>Select Country</option>
+                                            <option value="India">India</option>
+                                            <option value="United States">United States</option>
+                                            <option value="Kuwait">Kuwait</option>
+                                            <option value="Qatar">Qatar</option>
+                                            <option value="UAE">UAE</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group-custom">
+                                        <textarea class="form-control-custom" rows="5" placeholder="Message"
+                                            required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-submit-red mt-3">
+                                        Submit Now <i class="fa-solid fa-angles-right ms-2 small"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT FORM Section End -->
+
+    <!-- BLOG Section Start -->
+    <section class="blog-section py-5">
+        <div class="container py-lg-4">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-8">
+                    <span class="text-uppercase fw-bold text-red small ms-1">LATEST FROM BLOG</span>
+                    <h2 class="display-5 fw-bold text-navy mt-2">Professional Car Repair<br>Articles & Updates</h2>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                    <a href="#" class="btn-view-all-blogs">
+                        View All Blogs
+                        <span class="arrow-circle"><i class="fa-solid fa-angles-right"></i></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Blog 1 -->
+                <div class="col-lg-4 col-md-6 col-6">
+                    <div class="blog-card bg-white shadow-sm rounded-4 overflow-hidden h-100 border-0">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img src="assets/blog-1.jpg" class="img-fluid w-100" alt="Blog Post">
+
+                        </div>
+                        <div class="blog-content p-3">
+                            <h5 class="fw-bold text-navy mb-2 fs-6">Car Life Extension Tips</h5>
+                            <p class="text-muted xs-text mb-3">Regular maintenance and timely repairs can significantly
+                                increase your car’s lifespan...</p>
+                            <a href="#" class="read-more-btn mb-3">Read More <i
+                                    class="fa-solid fa-arrow-right-long ms-1"></i></a>
+
+                            <div
+                                class="blog-meta-footer border-top pt-3 mt-2 d-flex justify-content-between align-items-center">
+                                <span class="xs-text text-muted automart"><i class="fa-solid fa-user text-red me-1"></i>
+                                    AUTOMART</span>
+                                <span class="xs-text text-muted"><i class="fa-solid fa-calendar-days text-red me-1"></i>
+                                    Feb 10, 26</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 2 -->
+                <div class="col-lg-4 col-md-6 col-6">
+                    <div class="blog-card bg-white shadow-sm rounded-4 overflow-hidden h-100 border-0">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img src="assets/blog-2.jpg" class="img-fluid w-100" alt="Blog Post">
+
+                        </div>
+                        <div class="blog-content p-3">
+                            <h5 class="fw-bold text-navy mb-2 fs-6">Safe Driving Maintenance</h5>
+                            <p class="text-muted xs-text mb-3">Proper car maintenance plays a crucial role in ensuring
+                                road safety. Discover essential...</p>
+                            <a href="#" class="read-more-btn mb-3">Read More <i
+                                    class="fa-solid fa-arrow-right-long ms-1"></i></a>
+
+                            <div
+                                class="blog-meta-footer border-top pt-3 mt-2 d-flex justify-content-between align-items-center">
+                                <span class="xs-text text-muted automart"><i class="fa-solid fa-user text-red me-1"></i>
+                                    AUTOMART</span>
+                                <span class="xs-text text-muted"><i class="fa-solid fa-calendar-days text-red me-1"></i>
+                                    Feb 14, 26</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 3 -->
+                <div class="col-lg-4 col-md-6 col-6">
+                    <div class="blog-card bg-white shadow-sm rounded-4 overflow-hidden h-100 border-0">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img src="assets/blog-3.jpg" class="img-fluid w-100" alt="Blog Post">
+
+                        </div>
+                        <div class="blog-content p-3">
+                            <h5 class="fw-bold text-navy mb-2 fs-6">Engine Power Guide</h5>
+                            <p class="text-muted xs-text mb-3">Many vehicle components work together to keep your engine
+                                performing efficiently. This...</p>
+                            <a href="#" class="read-more-btn mb-3">Read More <i
+                                    class="fa-solid fa-arrow-right-long ms-1"></i></a>
+
+                            <div
+                                class="blog-meta-footer border-top pt-3 mt-2 d-flex justify-content-between align-items-center">
+                                <span class="xs-text text-muted automart"><i class="fa-solid fa-user text-red me-1"></i>
+                                    AUTOMART</span>
+                                <span class="xs-text text-muted"><i class="fa-solid fa-calendar-days text-red me-1"></i>
+                                    Feb 17, 26</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section Start -->
+    <section class="cta-banner-section position-relative py-5">
+        <div class="cta-overlay"></div>
+        <div class="container position-relative z-2">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <span class="text-white fw-bold text-uppercase small letter-spacing-2">GET OUR SERVICE</span>
+                    <h2 class="display-4 fw-bold text-white mt-2">Trusted Car Repair Experts<br>Get In Touch Today!
+                    </h2>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                    <a href="#" class="btn-get-details">
+                        Get Details
+                        <span class="arrow-circle"><i class="fa-solid fa-angles-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section End -->
+
+    <!-- FOOTER Section Start -->
+    <footer class="footer-area position-relative pb-4">
+        <!-- Animated Existing SVG Gears Background -->
+        <div class="footer-gears-container">
+            <!-- Gear 1 -->
+            <div class="footer-gear gear-1">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="180"
+                    height="180">
+                    <path
+                        d="M8.932.727c-.243-.97-1.62-.97-1.864 0l-.071.286a.96.96 0 0 1-1.622.434l-.205-.211c-.695-.719-1.888-.03-1.613.931l.08.284a.96.96 0 0 1-1.186 1.187l-.284-.081c-.96-.275-1.65.918-.931 1.613l.211.205a.96.96 0 0 1-.434 1.622l-.286.071c-.97.243-.97 1.62 0 1.864l.286.071a.96.96 0 0 1 .434 1.622l-.211.205c-.719.695-.03 1.888.931 1.613l.284-.08a.96.96 0 0 1 1.187 1.187l-.081.283c-.275.96.918 1.65 1.613.931l.205-.211a.96.96 0 0 1 1.622.434l.071.286c.243.97 1.62.97 1.864 0l.071-.286a.96.96 0 0 1 1.622-.434l.205.211c.695.719 1.888.03 1.613-.931l-.08-.284a.96.96 0 0 1 1.187-1.187l.283.081c.96.275 1.65-.918.931-1.613l-.211-.205a.96.96 0 0 1 .434-1.622l-.286-.071c.97-.243.97-1.62 0-1.864l-.286-.071a.96.96 0 0 1-.434-1.622l.211-.205c.719-.695.03-1.888-.931-1.613l-.284.08a.96.96 0 0 1-1.187-1.186l.081-.284c.275-.96-.918-1.65-1.613-.931l-.205.211a.96.96 0 0 1-1.622-.434L8.932.727zM8 12.997a4.998 4.998 0 1 1 0-9.995 4.998 4.998 0 0 1 0 9.996z" />
+                </svg>
+            </div>
+            <!-- Gear 2 -->
+            <div class="footer-gear gear-2">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="220" height="220">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M17.2994 10.4527L19.2267 10.7677C19.3846 10.7935 19.5003 10.9298 19.5 11.0896V12.883C19.5 13.0412 19.3865 13.1768 19.2303 13.2042L17.3004 13.543C17.1885 13.9298 17.0349 14.3022 16.8415 14.6543L17.9823 16.2382C18.0759 16.3679 18.0612 16.5463 17.9483 16.6595L16.6804 17.9283C16.5682 18.0401 16.3921 18.0561 16.2623 17.9645L14.6627 16.8424C14.3099 17.0387 13.9352 17.1952 13.5442 17.3103L13.2034 19.231C13.176 19.3865 13.0406 19.5 12.8825 19.5H11.0888C10.9294 19.5 10.7934 19.3849 10.7676 19.228L10.4493 17.3168C10.059 17.204 9.6823 17.0485 9.32585 16.8525L7.73767 17.9648C7.60821 18.0558 7.43178 18.0401 7.31992 17.9283L6.05198 16.6595C5.93947 16.5463 5.9248 16.3686 6.01741 16.2391L7.13958 14.6697C6.94163 14.3116 6.78444 13.9337 6.67062 13.5414L4.76905 13.2042C4.61349 13.1765 4.5 13.0412 4.5 12.883V11.0896C4.5 10.9304 4.61544 10.7941 4.77263 10.768L6.67421 10.4514C6.78868 10.0582 6.94586 9.68022 7.14316 9.32315L6.0347 7.73739C5.94371 7.60793 5.95937 7.43185 6.07122 7.32L7.33883 6.0525C7.452 5.94 7.62908 5.925 7.7592 6.01793L9.33433 7.14293C9.68817 6.94924 10.0639 6.795 10.4552 6.6825L10.767 4.77359C10.7927 4.61576 10.929 4.5 11.0888 4.5H12.8825C13.041 4.5 13.1763 4.61413 13.2037 4.77L13.5399 6.68935C13.929 6.8025 14.304 6.95837 14.6591 7.15467L16.2385 6.01957C16.3683 5.92598 16.5464 5.94065 16.6595 6.05348L17.9278 7.32098C18.0397 7.43315 18.0553 7.60957 17.9643 7.73902L16.8392 9.34239C17.0323 9.69424 17.1865 10.066 17.2994 10.4527ZM9.71725 12C9.71725 13.2607 10.7393 14.2826 12.0001 14.2826C13.2608 14.2826 14.2829 13.2607 14.2829 12C14.2829 10.7394 13.2608 9.71742 12.0001 9.71742C10.7393 9.71742 9.71725 10.7394 9.71725 12Z"
+                        stroke="currentColor" />
+                </svg>
+            </div>
+            <!-- Gear 3 -->
+            <div class="footer-gear gear-3">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="150"
+                    height="150">
+                    <path
+                        d="M8.932.727c-.243-.97-1.62-.97-1.864 0l-.071.286a.96.96 0 0 1-1.622.434l-.205-.211c-.695-.719-1.888-.03-1.613.931l.08.284a.96.96 0 0 1-1.186 1.187l-.284-.081c-.96-.275-1.65.918-.931 1.613l.211.205a.96.96 0 0 1-.434 1.622l-.286.071c-.97.243-.97 1.62 0 1.864l.286.071a.96.96 0 0 1 .434 1.622l-.211.205c-.719.695-.03 1.888.931 1.613l.284-.08a.96.96 0 0 1 1.187 1.187l-.081.283c-.275.96.918 1.65 1.613.931l.205-.211a.96.96 0 0 1 1.622.434l.071.286c.243.97 1.62.97 1.864 0l.071-.286a.96.96 0 0 1 1.622-.434l.205.211c.695.719 1.888.03 1.613-.931l-.08-.284a.96.96 0 0 1 1.187-1.187l.283.081c.96.275 1.65-.918.931-1.613l-.211-.205a.96.96 0 0 1 .434-1.622l-.286-.071c.97-.243.97-1.62 0-1.864l-.286-.071a.96.96 0 0 1-.434-1.622l.211-.205c.719-.695.03-1.888-.931-1.613l-.284.08a.96.96 0 0 1-1.187-1.186l.081-.284c.275-.96-.918-1.65-1.613-.931l-.205.211a.96.96 0 0 1-1.622-.434L8.932.727zM8 12.997a4.998 4.998 0 1 1 0-9.995 4.998 4.998 0 0 1 0 9.996z" />
+                </svg>
+            </div>
+            <!-- Gear 4 (Extra Large) -->
+            <div class="footer-gear gear-4">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="380" height="380">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M17.2994 10.4527L19.2267 10.7677C19.3846 10.7935 19.5003 10.9298 19.5 11.0896V12.883C19.5 13.0412 19.3865 13.1768 19.2303 13.2042L17.3004 13.543C17.1885 13.9298 17.0349 14.3022 16.8415 14.6543L17.9823 16.2382C18.0759 16.3679 18.0612 16.5463 17.9483 16.6595L16.6804 17.9283C16.5682 18.0401 16.3921 18.0561 16.2623 17.9645L14.6627 16.8424C14.3099 17.0387 13.9352 17.1952 13.5442 17.3103L13.2034 19.231C13.176 19.3865 13.0406 19.5 12.8825 19.5H11.0888C10.9294 19.5 10.7934 19.3849 10.7676 19.228L10.4493 17.3168C10.059 17.204 9.6823 17.0485 9.32585 16.8525L7.73767 17.9648C7.60821 18.0558 7.43178 18.0401 7.31992 17.9283L6.05198 16.6595C5.93947 16.5463 5.9248 16.3686 6.01741 16.2391L7.13958 14.6697C6.94163 14.3116 6.78444 13.9337 6.67062 13.5414L4.76905 13.2042C4.61349 13.1765 4.5 13.0412 4.5 12.883V11.0896C4.5 10.9304 4.61544 10.7941 4.77263 10.768L6.67421 10.4514C6.78868 10.0582 6.94586 9.68022 7.14316 9.32315L6.0347 7.73739C5.94371 7.60793 5.95937 7.43185 6.07122 7.32L7.33883 6.0525C7.452 5.94 7.62908 5.925 7.7592 6.01793L9.33433 7.14293C9.68817 6.94924 10.0639 6.795 10.4552 6.6825L10.767 4.77359C10.7927 4.61576 10.929 4.5 11.0888 4.5H12.8825C13.041 4.5 13.1763 4.61413 13.2037 4.77L13.5399 6.68935C13.929 6.8025 14.304 6.95837 14.6591 7.15467L16.2385 6.01957C16.3683 5.92598 16.5464 5.94065 16.6595 6.05348L17.9278 7.32098C18.0397 7.43315 18.0553 7.60957 17.9643 7.73902L16.8392 9.34239C17.0323 9.69424 17.1865 10.066 17.2994 10.4527ZM9.71725 12C9.71725 13.2607 10.7393 14.2826 12.0001 14.2826C13.2608 14.2826 14.2829 13.2607 14.2829 12C14.2829 10.7394 13.2608 9.71742 12.0001 9.71742C10.7393 9.71742 9.71725 10.7394 9.71725 12Z"
+                        stroke="currentColor" />
+                </svg>
+            </div>
+            <!-- Gear 5 (Mini) -->
+            <div class="footer-gear gear-5">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="100"
+                    height="100">
+                    <path
+                        d="M8.932.727c-.243-.97-1.62-.97-1.864 0l-.071.286a.96.96 0 0 1-1.622.434l-.205-.211c-.695-.719-1.888-.03-1.613.931l.08.284a.96.96 0 0 1-1.186 1.187l-.284-.081c-.96-.275-1.65.918-.931 1.613l.211.205a.96.96 0 0 1-.434 1.622l-.286.071c-.97.243-.97 1.62 0 1.864l.286.071a.96.96 0 0 1 .434 1.622l-.211.205c-.719.695-.03 1.888.931 1.613l.284-.08a.96.96 0 0 1 1.187 1.187l-.081.283c-.275.96.918 1.65 1.613.931l.205-.211a.96.96 0 0 1 1.622.434l.071.286c.243.97 1.62.97 1.864 0l.071-.286a.96.96 0 0 1 1.622-.434l.205.211c.695.719 1.888.03 1.613-.931l-.08-.284a.96.96 0 0 1 1.187-1.187l.283.081c.96.275 1.65-.918.931-1.613l-.211-.205a.96.96 0 0 1 .434-1.622l-.286-.071c.97-.243.97-1.62 0-1.864l-.286-.071a.96.96 0 0 1-.434-1.622l.211-.205c.719-.695.03-1.888-.931-1.613l-.284.08a.96.96 0 0 1-1.187-1.186l.081-.284c.275-.96-.918-1.65-1.613-.931l-.205.211a.96.96 0 0 1-1.622-.434L8.932.727zM8 12.997a4.998 4.998 0 1 1 0-9.995 4.998 4.998 0 0 1 0 9.996z" />
+                </svg>
+            </div>
+        </div>
+        <div class="container pt-5 pb-0 position-relative z-2">
+            <div class="row py-5 g-5">
+                <!-- Col 1: Logo & Newsletter -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget pe-lg-4">
+                        <div class="footer-logo mb-4">
+                            <img src="assets/logo-1.png" alt="Automart Logo" width="160">
+                        </div>
+                        <p class="text-white small mb-4">Your trusted partner for reliable auto care and expert vehicle
+                            maintenance. We’re committed to keeping you safe on the road with quality service you can
+                            count on.</p>
+
+                        <h5 class="text-white fw-bold mb-3">Newsletter</h5>
+                        <div class="newsletter-wrap position-relative mb-4">
+                            <input type="email" class="footer-input" placeholder="Email address">
+                            <button class="newsletter-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+
+                        <div class="footer-socials d-flex gap-2">
+                            <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-pinterest-p"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 2: Our Services -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="text-white fw-bold mb-4 footer-title">Our Services</h4>
+                        <ul class="footer-links list-unstyled">
+                            <li><a href="#">Brake Check & Repair</a></li>
+                            <li><a href="#">Electrical System Repair</a></li>
+                            <li><a href="#">Oil Change & Maintenance</a></li>
+                            <li><a href="#">Wheel Alignment & Balancing</a></li>
+                            <li><a href="#">Electrical System Repair</a></li>
+                            <li><a href="#">Oil Change & Maintenance</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Col 3: Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="text-white fw-bold mb-4 footer-title">Quick Links</h4>
+                        <ul class="footer-links list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Pricing Plan</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Col 4: Our Offices -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="text-white fw-bold mb-4 footer-title">Our Offices</h4>
+                        <div class="office-box mb-4">
+                            <span class="text-red xs-text fw-bold d-block mb-1">Headquarters - USA</span>
+                            <h5 class="text-white fw-bold">Seattle (Major City In The State Washington).</h5>
+                        </div>
+                        <div class="office-box">
+                            <span class="text-red xs-text fw-bold d-block mb-1">Operations - China</span>
+                            <h5 class="text-white fw-bold">Shanghai Major Global Financial Hub & China's Largest
+                                Cities</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="footer-bottom pt-4 pb-0 border-top border-secondary">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="text-white-50 small mb-md-0">Copyright © 2026 Automart. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <div class="footer-legal d-flex justify-content-md-end gap-3">
+                            <a href="#" class="text-white-50 small text-decoration-none">Terms of Service</a>
+                            <span class="text-white-50">|</span>
+                            <a href="#" class="text-white-50 small text-decoration-none">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER Section End -->
+
     <!-- Sidebar Structure -->
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
     <div class="sidebar" id="sidebar">
@@ -828,9 +2009,8 @@
         </div>
     </div>
 
-    <!-- Bootstrap JS -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
     <script src="script/script.js"></script>
 </body>
 
