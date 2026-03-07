@@ -4686,7 +4686,7 @@ body {
    Contact Page Specific Styles
    ========================================================================== */
 .contact-info-card {
-    background: white;
+    /* background: white; */
     padding: 40px;
     border-radius: 30px;
     text-align: center;
