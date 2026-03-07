@@ -4689,7 +4689,7 @@ body {
     /* background: white; */
     padding: 40px;
     border-radius: 30px;
-    text-align: center;
+    text-align: left;
     box-shadow: 0 15px 45px rgba(10, 19, 74, 0.05);
     height: 100%;
     transition: all 0.4s ease;
